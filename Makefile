@@ -8,8 +8,7 @@
 CC			=	gcc
 CFLAGS		= -W -Wall -Wextra -g3 -I./include
 
-SRCS		=	$(wildcard main.c ./src/*.c)
-SRC 		+= ./main.c
+SRCS		=	$(wildcard ./src/*.c)
 OBJS		=	$(SRCS:.c=.o)
 
 TARGET		=	test

@@ -1,4 +1,3 @@
-
 /*
 ** EPITECH PROJECT, 2021
 ** Epitech-Jam-30.4.21
@@ -6,45 +5,16 @@
 ** main
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-char *cut_str(int num, char *str)
+// Simple int array management
+
+// Get the size of an array
+int get_array_size(int *array)
 {
-    int i = 0;
-    int j = 0;
-    char *new_str = malloc(sizeof(char) * (num + 1));
-
-    while (str[i] != '\0') {
-        if (i < num) {
-            new_str[j] = str[i];
-            j++;
-        }
-        i++;
-    }
-    new_str[j] = '\0';
-    return (new_str);
+    return(sizeof(array) / sizeof(array[0]));
 }
 
-char *remplace_str(char *str, char *str2)
-{
-    int sstr = strlen(str);
-    int sstr2 = strlen(str2);
-
-    if (sstr2 > sstr) {
-        str = realloc(str, sizeof(char) * (sstr2 + 1));
-        str[sstr2] = '\0';
-        for (int i = 0; str2[i]; i++)
-            str[i] = str2[i];
-    } else {
-        for (int i = 0; str2[i]; i++)
-            str[i] = str2[i];
-        str[sstr2] = '\0';
-    }
-    return (str);
-}
-
+// Append at the end of tab 
 int *push_back(int *arr, int val, int arr_size)
 {
     int *new_arr = malloc(sizeof(int) * (arr_size + 1));
@@ -56,6 +26,7 @@ int *push_back(int *arr, int val, int arr_size)
     return (new_arr);
 }
 
+// Append at the begining of tab
 int *push_front(int *arr, int val, int arr_size)
 {
     int *new_arr = malloc(sizeof(int) * (arr_size + 2));
@@ -68,6 +39,7 @@ int *push_front(int *arr, int val, int arr_size)
     return (new_arr);
 }
 
+// Append at the index of tab
 int *insert(int *arr, int val, int arr_size, int val_pos)
 {
     int i = 0;
@@ -80,6 +52,8 @@ int *insert(int *arr, int val, int arr_size, int val_pos)
     return(arr);
 }
 
+
+// Remove the last element of tab
 int *pop_back(int *arr, int arr_size)
 {
     arr_size = arr_size - 1;
@@ -92,6 +66,8 @@ int *pop_back(int *arr, int arr_size)
     return (new_arr);
 }
 
+
+// Remove the first element of tab
 int *pop_front(int *arr, int arr_size)
 {
     int *new_arr = malloc(sizeof(int) * (arr_size - 1));
@@ -102,6 +78,8 @@ int *pop_front(int *arr, int arr_size)
     return (new_arr);
 }
 
+
+// Remove the value of tab 
 int *delete_value(int *arr, int val, int arr_size)
 {
     int i = 0;
