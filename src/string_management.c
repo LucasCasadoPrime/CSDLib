@@ -30,7 +30,7 @@ char *cut_str(int num, char *str)
 
 
 // Remplace a string by another one
-char *remplace_str(char *str, char *str2)
+char *replace_str(char *str, char *str2)
 {
     int sstr = strlen(str);
     int sstr2 = strlen(str2);
