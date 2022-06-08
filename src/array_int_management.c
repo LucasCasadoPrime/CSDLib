@@ -5,13 +5,18 @@
 ** main
 */
 
-
 // Simple int array management
+
+#include "../include/include.h"
 
 // Get the size of an array
 int get_array_size(int *array)
 {
-    return(sizeof(array) / sizeof(array[0]));
+    int i = 0;
+
+    while (array[i] != 0)
+        i++;
+    return (i);
 }
 
 // Append at the end of tab 
@@ -94,4 +99,9 @@ int *delete_value(int *arr, int val, int arr_size)
     }
 
     return (new_arr);
+}
+
+int main()
+{
+    
 }
