@@ -100,8 +100,3 @@ int *delete_value(int *arr, int val, int arr_size)
 
     return (new_arr);
 }
-
-int main()
-{
-    
-}
