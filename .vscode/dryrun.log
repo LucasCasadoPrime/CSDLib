@@ -1,9 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/casado/Documents/code/C/CSDLib'
-gcc -W -Wall -Wextra -g3   -c -o src/array_int_management.o src/array_int_management.c
-gcc -W -Wall -Wextra -g3   -c -o src/string_management.o src/string_management.c
-gcc -W -Wall -Wextra -g3   -c -o src/array_str_management.o src/array_str_management.c
-gcc -o test src/array_int_management.o src/string_management.o src/array_str_management.o  -I./include
-echo "\033[1;34mBinary : \033[1;35mtest\033[1;34m created sucesfully.\033[0m"
-make: Leaving directory '/home/casado/Documents/code/C/CSDLib'
- 

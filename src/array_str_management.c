@@ -85,7 +85,7 @@ char **pop_front_str(char **arr, int arr_size)
         new_arr[i] = malloc(sizeof(char *));
         new_arr[i] = arr[i+1];
     }
-
+    
     return (new_arr);
 }
 
@@ -111,29 +111,3 @@ char **delete_str(char **arr, int arr_size, int val_pos)
     }
     return(new_arr);
 }
-
-// int main(void)
-// {
-
-//     int size = 4;
-
-//     char **arr = malloc(sizeof(char *) * (size + 1));
-//     for (int i = 0; i < size; i++)
-//         arr[i] = malloc(sizeof(char) * (size + 1));
-//     arr[size] = NULL;
-
-//     printf("---------  Before  --------------\n");
-//         arr[0] = "Hello";
-//         arr[1] = "world";
-//         arr[2] = "WOOW";
-//         arr[3] = "WAAW";
-
-//     for (int i = 0; arr[i] != NULL; i++)
-//         printf("%s\n", arr[i]);
-    
-//     printf("----------  After  --------------\n");
-//     arr = delete_str(arr, size, 2);
-//     for (int i = 0; arr[i]; i++)
-//         printf("%s\n", arr[i]);
-//     printf("-----------  END  ---------------\n");
-// }
