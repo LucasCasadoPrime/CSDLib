@@ -9,11 +9,6 @@
 
 #include "../includes/linked_list.h"
 
-typedef struct node_s {
-    void *data;
-    struct node_s *next;
-} node_t;
-
 
 // create a new node at the beginning of the list
 node_t *push_front_ll(node_t *head, void* data) {
@@ -97,7 +92,5 @@ node_t *print_ll(node_t *list, char *type) {
     }
     return list;
 }
-
-
 
 // Source of help : https://www.codegrepper.com/code-examples/c/linked++list+in+c
