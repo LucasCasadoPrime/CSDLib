@@ -21,11 +21,41 @@ FILE *open_file(char *file_name, char *mode)
     return (file);
 }
 
-// write in a file
-void write_file(FILE *file, char *str)
+// write a string in a file
+void write_str_in_file(FILE *file, char *str)
 {
     fprintf(file, "%s", str);
 }
+
+// write int in a file
+void write_int_in_file(FILE *file, int number)
+{
+    fprintf(file, "%d", number);
+}
+
+// write a char in a file
+void write_char_in_file(FILE *file, char c)
+{
+    fprintf(file, "%c", c);
+}
+
+
+// read a file
+char *read_file(char *file_name)
+{
+    FILE *file = open_file(file_name, "r");
+    char *str = NULL;
+    size_t size = 0;
+
+    if (file == NULL) {
+        printf("Error: file %s not found\n", file_name);
+        exit(84);
+    }
+    getline(&str, &size, file);
+    fclose(file);
+    return (str);
+}
+
 
 // print a file
 void print_file(FILE *file)
@@ -78,8 +108,8 @@ char *file_type(char *file_name)
     return (file_type);
 }
 
-// get time file's last modification
-char *file_lmodif(char *file_name)
+// get time of last modification
+char *file_last_modif_time(char *file_name)
 {
     struct stat *buf;
     buf = malloc(sizeof(struct stat));
@@ -91,3 +121,62 @@ char *file_lmodif(char *file_name)
     free(buf);
     return (file_time);
 }
+
+// get time of last status change
+char *file_change_status_time(char *file_name)
+{
+    struct stat *buf;
+    buf = malloc(sizeof(struct stat));
+    char *file_time = NULL;
+
+    stat(file_name, buf);
+    file_time = malloc(sizeof(char) * 20);
+    strftime(file_time, 20, "%d/%m/%Y %H:%M:%S", localtime(&buf->st_ctime));
+    free(buf);
+    return (file_time);
+}
+
+// get time of last access
+char *file_acces_time(char *file_name)
+{
+    struct stat *buf;
+    buf = malloc(sizeof(struct stat));
+    char *file_time = NULL;
+
+    stat(file_name, buf);
+    file_time = malloc(sizeof(char) * 20);
+    strftime(file_time, 20, "%d/%m/%Y %H:%M:%S", localtime(&buf->st_atime));
+    free(buf);
+    return (file_time);
+}
+
+
+// int main()
+// {
+//     char *file_name = "test.txt";
+//     FILE *file = open_file(file_name, "w");
+
+//     write_str_in_file(file, "Hello World\n");
+//     write_char_in_file(file, 'c');
+//     write_int_in_file(file, 42);
+//     fclose(file);
+
+//     char *file_typ = malloc(sizeof(char *));
+//     int file_siz = 0;
+//     char *file_last_modif_tim = malloc(sizeof(char *));
+//     char *file_change_status_tim = malloc(sizeof(char *));
+//     char *file_acces_tim = malloc(sizeof(char *));
+
+//     file_typ = file_type(file_name);
+//     file_siz = file_size(file_name);
+//     file_last_modif_tim = file_last_modif_time(file_name);
+//     file_change_status_tim = file_change_status_time(file_name);
+//     file_acces_tim = file_acces_time(file_name);
+//     printf("%s\n", file_typ);
+//     printf("%d\n", file_siz);
+//     printf("%s\n", file_last_modif_tim);
+//     printf("%s\n", file_change_status_tim);
+//     printf("%s\n", file_acces_tim);
+//     print_file(open_file(file_name, "r"));
+//     return (0);
+// }
