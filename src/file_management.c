@@ -21,6 +21,13 @@ FILE *open_file(char *file_name, char *mode)
     return (file);
 }
 
+// delete a file
+void delete_file(char *file_name)
+{
+    if (remove(file_name) != 0)
+        printf("Error: file %s not found\n", file_name);
+}
+
 // write a string in a file
 void write_str_in_file(FILE *file, char *str)
 {
@@ -149,34 +156,3 @@ char *file_acces_time(char *file_name)
     free(buf);
     return (file_time);
 }
-
-
-// int main()
-// {
-//     char *file_name = "test.txt";
-//     FILE *file = open_file(file_name, "w");
-
-//     write_str_in_file(file, "Hello World\n");
-//     write_char_in_file(file, 'c');
-//     write_int_in_file(file, 42);
-//     fclose(file);
-
-//     char *file_typ = malloc(sizeof(char *));
-//     int file_siz = 0;
-//     char *file_last_modif_tim = malloc(sizeof(char *));
-//     char *file_change_status_tim = malloc(sizeof(char *));
-//     char *file_acces_tim = malloc(sizeof(char *));
-
-//     file_typ = file_type(file_name);
-//     file_siz = file_size(file_name);
-//     file_last_modif_tim = file_last_modif_time(file_name);
-//     file_change_status_tim = file_change_status_time(file_name);
-//     file_acces_tim = file_acces_time(file_name);
-//     printf("%s\n", file_typ);
-//     printf("%d\n", file_siz);
-//     printf("%s\n", file_last_modif_tim);
-//     printf("%s\n", file_change_status_tim);
-//     printf("%s\n", file_acces_tim);
-//     print_file(open_file(file_name, "r"));
-//     return (0);
-// }

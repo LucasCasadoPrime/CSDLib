@@ -7,13 +7,12 @@
 
 // Simple linked_list management
 
-#include "../include/include.h"
-
-// content of a new node
 typedef struct node_s {
-    void* data;
+    void *data;
     struct node_s *next;
 } node_t;
+
+#include "../include/include.h"
 
 // create a new node at the beginning of the list
 node_t *push_front_ll(node_t *head, void* data) {
@@ -85,14 +84,19 @@ node_t *remove_ll(node_t *head, void* data)
     return(head);
 }
 
-// print the linked_list
-node_t *print_ll(node_t *list) {
+// print the linked_list select the type of data
+node_t *print_ll(node_t *list, char *type) {
     node_t *tmp = list;
     while (tmp != NULL) {
-        printf("%s", (char *)tmp->data);
+        if (strcmp(type, "int") == 0)
+            printf("%d\n", (int)tmp->data);
+        else if (strcmp(type, "string") == 0)
+            printf("%s\n", (char *)tmp->data);
         tmp = tmp->next;
     }
     return list;
 }
+
+
 
 // Source of help : https://www.codegrepper.com/code-examples/c/linked++list+in+c
