@@ -34,7 +34,6 @@ node_t *push_back_ll(node_t *head, void* data)
     if (head == NULL)
         head = new_node;
     else {
-        node_t *tmp = head;
         while(tmp->next != NULL)
             tmp = tmp->next;
         tmp->next = new_node;
@@ -42,7 +41,25 @@ node_t *push_back_ll(node_t *head, void* data)
     return(head);
 }
 
+// remove the first node of the list
+node_t *pop_front_ll(node_t *head)
+{
+    node_t *tmp = head;
+    head = head->next;
+    free(tmp);
+    return(head);
+}
 
+// remove the last node of the list
+node_t *pop_back_ll(node_t *head)
+{
+    node_t *tmp = head;
+    while (tmp->next->next != NULL)
+        tmp = tmp->next;
+    free(tmp->next);
+    tmp->next = NULL;
+    return(head);
+}
 
 // print the linked_list
 node_t *print_ll(node_t *list) {
@@ -54,15 +71,16 @@ node_t *print_ll(node_t *list) {
     return list;
 }
 
+// int main(){
+//     node_t *list = NULL;
 
-int main(){
-    node_t *list = NULL;
+//     list = push_back_ll(list, "Hello");
+//     list = push_front_ll(list, "World");
+//     list = push_back_ll(list, "!");
+//     list = pop_front_ll(list);
+//     list = pop_back_ll(list);
 
-    list = push_back_ll(list, "Hello");
-    list = push_front_ll(list, "World");
-    list = push_back_ll(list, "!");
+//     print_ll(list);
 
-    print_ll(list);
-
-    return 0;
-}
+//     return 0;
+// }
