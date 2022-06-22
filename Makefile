@@ -17,7 +17,7 @@ TARGET		=	test
 all			:	$(TARGET)
 
 $(TARGET)	:	$(OBJS)
-			$(CC) -o $@ $^ $(LDFLAGS) -I./include
+			$(CC) -o $@ $^ $(LDFLAGS) -I./includes
 			@ echo "\033[1;34mBinary : \033[1;35m$(TARGET)\033[1;34m created sucesfully.\033[0m"
 
 clean		:

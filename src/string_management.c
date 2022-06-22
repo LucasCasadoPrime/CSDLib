@@ -7,8 +7,7 @@
 
 // Manage easyly the strings
 
-#include "../include/include.h"
-
+#include "../includes/string_management.h"
 
 // Cut a string a the index number you want 
 char *cut_str(int num, char *str)

@@ -7,7 +7,7 @@
 
 // Simple str array management
 
-#include "../include/include.h"
+#include "../includes/array_str_management.h"
 
 // add a string to the end of the array
 char **push_back_str(char **arr, char *str, int arr_size)
