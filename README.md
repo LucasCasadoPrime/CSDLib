@@ -1,11 +1,3 @@
-<!-- PROJECT SHIELDS -->
-
-[![Forks][forks-shield]][forks-url]
-
-[![Stargazers][stars-shield]][stars-url]
-
-[![Issues][issues-shield]][issues-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div  align="center">
@@ -155,6 +147,7 @@ Don't forget to give the project a star! Thanks again!
   
 
 Lucas Casado  - lucas.casado@epitech.eu
+
 Project Link: [https://github.com/LucasCasadoPrime/CSDLib/](https://github.com/LucasCasadoPrime/CSDLib/)
 
 <!-- ACKNOWLEDGMENTS -->
