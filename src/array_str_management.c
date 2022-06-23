@@ -9,6 +9,20 @@
 
 #include "../includes/array_str_management.h"
 
+
+// create a strings array from a file
+char **create_str_array_from_file(char *file_name)
+{
+    FILE *file = open_file(file_name, "r");
+    char **str_array = malloc(sizeof(char *) * (get_nb_lines(file_name) + 1));
+    char *str = NULL;
+    size_t s = NULL;
+
+    for (int i = 0; getline(&str, &s, file) != -1; i++)
+        str_array[i] = strdup(str);
+    return(str_array);
+}
+
 // add a string to the end of the array
 char **push_back_str(char **arr, char *str, int arr_size)
 {

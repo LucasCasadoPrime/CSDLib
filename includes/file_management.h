@@ -98,5 +98,12 @@ char *file_change_status_time(char *file_name);
 */
 char *file_acces_time(char *file_name);
 
+/*! \fn get_nb_lines(char *file_name)
+    \brief Get the number of lines in a file.
+    \param file_name The name of the file.
+    \return The number of lines in the file.
+*/
+int get_nb_lines(char *file_name);
+
 
 #endif /* !FILE_MANAGEMENT_H_ */

@@ -21,6 +21,21 @@ FILE *open_file(char *file_name, char *mode)
     return (file);
 }
 
+// get nb of lines in a file
+int get_nb_lines(char *file_name)
+{
+    FILE *file = open_file(file_name, "r");
+    int nb_lines = 0;
+    char c;
+
+    while ((c = fgetc(file)) != EOF) {
+        if (c == '\n')
+            nb_lines++;
+    }
+    fclose(file);
+    return (nb_lines);
+}
+
 // delete a file
 void delete_file(char *file_name)
 {

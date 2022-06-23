@@ -91,4 +91,11 @@ int get_nb_words(char *str, const char *separator);
 */
 char **my_str_to_word_array(char *str, const char *separator);
 
+/*! \fn char **create_str_array_from_file(char *file_name)
+    \brief Create an array of strings from a file.
+    \param filepath The filepath.
+    \return The array of strings.
+*/
+char **create_str_array_from_file(char *file_name)
+
 #endif /* !ARRAY_STR_MANAGEMENT_H_ */
