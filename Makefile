@@ -10,6 +10,7 @@ CC	=	gcc
 
 ## ---- BINARIES NAMES ---- ##
 BIN	=	CSDLIB
+BINLIB = CSDLIB.a
 DEBUG_BIN	:=	$(BIN)_debug
 TEST_BIN	:=	$(BIN)_test
 
@@ -27,7 +28,6 @@ SRC	:=	$(SRCDIR)/array_int_management.c \
 		$(SRCDIR)/linked_list.c \
 
 OBJ	:=	$(SRC:.c=.o)	\
-		$(MAIN:.c=.o)
 
 ## ---- FILES-TEST ---- ##
 SRCTEST	:=	$(TESTDIR)/test_array_int.c \
@@ -49,7 +49,8 @@ FRM	=	rm -f $(BIN)	\
 		rm -f $(DEBUG_BIN)	\
 		rm -f $(TEST_BIN)	\
 		rm -f .history* \
-		rm -f .tags*
+		rm -f .tags* \
+		rm -rf ./lib
 
 ## ---- RULE ---- ##
 all	:	$(BIN)
@@ -68,6 +69,12 @@ debug	:
 tests_run	:	fclean
 	$(CC) $(SRC) $(SRCTEST) $(CFLAGS) $(LDFLAGS_TEST) -o $(TEST_BIN)
 	./$(TEST_BIN)
+
+## ---- CREATE LIBRARY ---- ##
+lib : 
+	ar rcs $(BINLIB) $(OBJ)
+	mkdir -p ./lib
+	mv $(BINLIB) ./lib
 
 ## ---- CLEANING ---- ##
 clean	:
