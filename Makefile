@@ -89,4 +89,4 @@ fclean	:	clean
 ## ---- RE ---- ##
 re	:	fclean	all
 
-.PHONY: all tests_run debug clean fclean re
+.PHONY: all tests_run lib debug clean fclean re
