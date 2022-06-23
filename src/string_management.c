@@ -31,31 +31,28 @@ char *cut_str(int num, char *str)
 // Remplace a string by another one
 char *replace_str(char *str, char *str2)
 {
-    int sstr = strlen(str);
-    int sstr2 = strlen(str2);
-
-    if (sstr2 > sstr) {
-        str = realloc(str, sizeof(char) * (sstr2 + 1));
-        str[sstr2] = '\0';
-        for (int i = 0; str2[i]; i++)
-            str[i] = str2[i];
-    } else {
-        for (int i = 0; str2[i]; i++)
-            str[i] = str2[i];
-        str[sstr2] = '\0';
-    }
+    str = malloc(sizeof(char) * (strlen(str2) + 1));
+    for (int i = 0; str2[i] != '\0'; i++)
+        str[i] = str2[i];
+    str[strlen(str2)] = '\0';
+    
     return (str);
 }
 
 // Replace all occurences of a char in a string but can't delete the char
-void replace_char(char *str, char c1, char c2)
-{
-    int len = strlen(str);
+char *replace_char(char *str, char c1, char c2)
+{   
+    char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
 
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] == c1)
-            str[i] = c2;
+            new_str[i] = c2;
+        else
+            new_str[i] = str[i];
     }
+
+    new_str[strlen(str)] = '\0';
+    return (new_str);
 }
 
 // Count the number of occurences of a char in a string
@@ -94,20 +91,16 @@ int count_substr(char *str, char *substr)
 // Delete all occurences of a char in a string
 char *delete_char(char *str, char c)
 {
-    int len = strlen(str);
-    int count = 0;
+    char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
+    int i = 0;
 
-    count = count_char(str, c);
-    str = realloc(str, sizeof(char) * (len - count + 1));
-
-    for (int i = 0; i < len; i++) {
-        if (str[i] == c) {
-            for (int j = i; j < len; j++)
-                str[j] = str[j + 1];
-            i--;
+    for (int k = 0; str[k] != '\0'; k++) {
+        if (str[k] != c) {
+            new_str[i] = str[k];
+            i++;
         }
     }
-    return (str);
+    return (new_str);
 }
 
 // Insert a char in a string at a specific index

@@ -27,7 +27,6 @@ char *cut_str(int num, char *str);
     \param str The string to replace.
     \param to_replace The string to replace.
     \param replace_by The string to replace with.
-    \return The string replaced.
 */
 char *replace_str(char *str, char *str2);
 
@@ -64,5 +63,12 @@ char *delete_char(char *str, char c);
 */
 char *insert_char(char *str, char c, int pos);
 
+/*! \fn char *replace_char(char *str, char c1, char c2)
+    \brief Replace all occurences of a character in a string.
+    \param str The string to replace the character in.
+    \param c1 The character to replace.
+    \param c2 The character to replace with.
+*/
+char *replace_char(char *str, char c1, char c2);
 
 #endif /* !STRING_MANAGEMENT_H_ */
