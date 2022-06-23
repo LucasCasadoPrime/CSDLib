@@ -27,6 +27,7 @@ char *cut_str(int num, char *str);
     \param str The string to replace.
     \param to_replace The string to replace.
     \param replace_by The string to replace with.
+    \return The replaced string.
 */
 char *replace_str(char *str, char *str2);
 
@@ -45,6 +46,23 @@ int count_char(char *str, char c);
     \return The number of times the substring appears in the string.
 */
 int count_substr(char *str, char *substr);
+
+/*! \fn char *insert_substr(char *str, char *substr, int pos)
+    \brief Insert a substring at a given position.
+    \param str The string to insert the substring in.
+    \param substr The substring to insert.
+    \param pos The position to insert the substring at.
+    \return The string with the substring inserted.
+*/
+char *insert_substr(char *str, char *substr, int pos);
+
+/*! \fn char *delete_substr(char *str, char *substr)
+    \brief Delete a substring from a string.
+    \param str The string to delete the substring from.
+    \param substr The substring to delete.
+    \return The string with the substring deleted.
+*/
+char *delete_substr(char *str, char *substr);
 
 /*! \fn char *delete_char(char *str, char c)
     \brief Delete a character from a string.
@@ -70,5 +88,72 @@ char *insert_char(char *str, char c, int pos);
     \param c2 The character to replace with.
 */
 char *replace_char(char *str, char c1, char c2);
+
+/*! \fn str_to_lower(char *str)
+    \brief Convert a string to lowercase.
+    \param str The string to convert.
+    \return The string in lowercase.
+*/
+char *str_to_lower(char *str);
+
+/*! \fn str_to_upper(char *str)
+    \brief Convert a string to uppercase.
+    \param str The string to convert.
+    \return The string in uppercase.
+*/
+char *str_to_upper(char *str);
+
+/*! \fn char *str_to_capital(char *str)
+    \brief capitalize the first and last letter of each word of a string.
+    \param str The string to convert.
+    \return The string in capital.
+*/
+char *str_to_capital(char *str);
+
+
+/*! \fn char *str_reverse(char *str)
+    \brief Reverse a string.
+    \param str The string to reverse.
+    \return The string reversed.
+*/
+char *str_reverse(char *str);
+
+
+/*! \fn int str_is_alpha(char *str)
+    \brief Check if a string is made of alphabetic characters.
+    \param str The string to check.
+    \return 1 if the string is made of alphabetic characters, 0 otherwise.
+*/
+int str_is_alpha(char *str);
+
+/*! \fn int str_is_numeric(char *str)
+    \brief Check if a string is made of numeric characters.
+    \param str The string to check.
+    \return 1 if the string is made of numeric characters, 0 otherwise.
+*/
+int str_is_numeric(char *str);
+
+/*! \fn int str_is_alphanumeric(char *str)
+    \brief Check if a string is made of alphanumeric characters.
+    \param str The string to check.
+    \return 1 if the string is made of alphanumeric characters, 0 otherwise.
+*/
+int str_is_alphanum(char *str);
+
+/*! \fn int str_start_with(char *str, char *start)
+    \brief Check if a string starts with a given string.
+    \param str The string to check.
+    \param start The string to check if it starts with.
+    \return 1 if the string starts with the given string, 0 otherwise.
+*/
+int str_start_with(char *str, char *start);
+
+/*! \fn int str_end_with(char *str, char *end)
+    \brief Check if a string ends with a given string.
+    \param str The string to check.
+    \param end The string to check if it ends with.
+    \return 1 if the string ends with the given string, 0 otherwise.
+*/
+int str_end_with(char *str, char *end);
 
 #endif /* !STRING_MANAGEMENT_H_ */

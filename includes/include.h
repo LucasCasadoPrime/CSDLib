@@ -14,6 +14,7 @@
 #include <sys/stat.h>
 #include <time.h>
 #include <criterion/criterion.h>
+#include <ctype.h>
 
 #include "array_str_management.h"
 #include "string_management.h"
