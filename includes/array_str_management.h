@@ -8,7 +8,7 @@
 #ifndef ARRAY_STR_MANAGEMENT_H_
 #define ARRAY_STR_MANAGEMENT_H_
 
-#include "../includes/include.h"
+#include "include.h"
 
 /*! \file array_str_management.h
     \brief Documentation about CSDLib's array of strings management.
@@ -96,6 +96,6 @@ char **my_str_to_word_array(char *str, const char *separator);
     \param filepath The filepath.
     \return The array of strings.
 */
-char **create_str_array_from_file(char *file_name)
+char **create_str_array_from_file(char *file_name);
 
 #endif /* !ARRAY_STR_MANAGEMENT_H_ */

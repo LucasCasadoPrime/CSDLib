@@ -7,7 +7,7 @@
 
 // Simple str array management
 
-#include "../includes/array_str_management.h"
+#include "../includes/include.h"
 
 
 // create a strings array from a file
@@ -16,10 +16,12 @@ char **create_str_array_from_file(char *file_name)
     FILE *file = open_file(file_name, "r");
     char **str_array = malloc(sizeof(char *) * (get_nb_lines(file_name) + 1));
     char *str = NULL;
-    size_t s = NULL;
+    size_t s = 0;
 
-    for (int i = 0; getline(&str, &s, file) != -1; i++)
+    for (int i = 0; getline(&str, &s, file) != -1; i++) {
         str_array[i] = strdup(str);
+    }
+
     return(str_array);
 }
 

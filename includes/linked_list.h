@@ -8,7 +8,7 @@
 #ifndef LINKED_LIST_H_
 #define LINKED_LIST_H_
 
-#include "../includes/include.h"
+#include "include.h"
 
 /*! \file linke_list.h
     \brief Documentation about CSDLib's linked list.
@@ -77,12 +77,5 @@ node_t *add_node_ll(node_t *head, void* data, node_t *prev, node_t *next);
     \return The new linked list.
 */
 node_t *remove_ll(node_t *head, void* data);
-
-/*! \fn node_t *print_ll(node_t *head)
-    \brief Print a linked list.
-    \param list The linked list.
-    \return The new linked list.
-*/
-node_t *print_ll(node_t *list, char *type);
 
 #endif /* !LINKED_LIST_H_ */

@@ -8,7 +8,7 @@
 #ifndef STRING_MANAGEMENT_H_
 #define STRING_MANAGEMENT_H_
 
-#include "../includes/include.h"
+#include "include.h"
 
 /*! \file string_management.h
     \brief Documentation about CSDLib's string management.

@@ -7,7 +7,7 @@
 
 // Simple int array management
 
-#include "../includes/array_int_management.h"
+#include "../includes/include.h"
 
 // Get the size of an array
 int get_array_size(int *array)

@@ -7,7 +7,7 @@
 
 // simple file management
 
-#include "../includes/file_management.h"
+#include "../includes/include.h"
 
 // open a file
 FILE *open_file(char *file_name, char *mode)

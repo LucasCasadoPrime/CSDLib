@@ -13,6 +13,13 @@
 #include <string.h>
 #include <sys/stat.h>
 #include <time.h>
+#include <criterion/criterion.h>
+
+#include "array_str_management.h"
+#include "string_management.h"
+#include "array_int_management.h"
+#include "file_management.h"
+#include "linked_list.h"
 
 
 #endif /* !INCLUDE_H_ */

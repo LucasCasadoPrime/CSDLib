@@ -7,7 +7,7 @@
 
 // Simple linked_list management
 
-#include "../includes/linked_list.h"
+#include "../includes/include.h"
 
 
 // create a new node at the beginning of the list
@@ -78,19 +78,6 @@ node_t *remove_ll(node_t *head, void* data)
         tmp = tmp->next;
     }
     return(head);
-}
-
-// print the linked_list select the type of data
-node_t *print_ll(node_t *list, char *type) {
-    node_t *tmp = list;
-    while (tmp != NULL) {
-        if (strcmp(type, "int") == 0)
-            printf("%d\n", (int)tmp->data);
-        else if (strcmp(type, "string") == 0)
-            printf("%s\n", (char *)tmp->data);
-        tmp = tmp->next;
-    }
-    return list;
 }
 
 // Source of help : https://www.codegrepper.com/code-examples/c/linked++list+in+c
