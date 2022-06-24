@@ -7,7 +7,7 @@
 
 // Manage easyly the strings
 
-#include "../includes/include.h"
+#include "../includes/CSDLib.h"
 
 // Cut a string a the index number you want 
 char *cut_str(int num, char *str)

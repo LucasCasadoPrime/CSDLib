@@ -8,7 +8,7 @@
 #ifndef ARRAY_INT_MANAGEMENT_H_
 #define ARRAY_INT_MANAGEMENT_H_
 
-#include "include.h"
+#include "CSDLib.h"
 
 
 /*! \file array_int_management.h

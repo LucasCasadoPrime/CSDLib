@@ -7,7 +7,7 @@
 
 // Simple str array management
 
-#include "../includes/include.h"
+#include "../includes/CSDLib.h"
 
 
 // create a strings array from a file

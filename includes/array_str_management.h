@@ -8,7 +8,7 @@
 #ifndef ARRAY_STR_MANAGEMENT_H_
 #define ARRAY_STR_MANAGEMENT_H_
 
-#include "include.h"
+#include "CSDLib.h"
 
 /*! \file array_str_management.h
     \brief Documentation about CSDLib's array of strings management.

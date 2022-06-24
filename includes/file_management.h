@@ -8,7 +8,7 @@
 #ifndef FILE_MANAGEMENT_H_
 #define FILE_MANAGEMENT_H_
 
-#include "include.h"
+#include "CSDLib.h"
 
 /*! \file array_str_management.h
     \brief Documentation about CSDLib's files management.

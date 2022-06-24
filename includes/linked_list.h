@@ -8,7 +8,7 @@
 #ifndef LINKED_LIST_H_
 #define LINKED_LIST_H_
 
-#include "include.h"
+#include "CSDLib.h"
 
 /*! \file linke_list.h
     \brief Documentation about CSDLib's linked list.
