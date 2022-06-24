@@ -18,6 +18,8 @@ char **create_str_array_from_file(char *file_name)
     char *str = NULL;
     size_t s = 0;
 
+    if (file == NULL)
+        printf("Error file not created.");
     for (int i = 0; getline(&str, &s, file) != -1; i++) {
         str_array[i] = strdup(str);
     }

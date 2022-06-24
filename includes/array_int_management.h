@@ -8,7 +8,7 @@
 #ifndef ARRAY_INT_MANAGEMENT_H_
 #define ARRAY_INT_MANAGEMENT_H_
 
-#include "./includes/include.h"
+#include "include.h"
 
 
 /*! \file array_int_management.h
