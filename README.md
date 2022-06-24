@@ -44,6 +44,8 @@ An awesome C Lib that all beginners must have to start!
 ## About The Project
 This is a usefull C library to make your project faster and easier, made especially for Epitech students to learn and understand C language and it's particularities.
 
+To be informed about the project, you can visit the [Discord](https://discord.gg/2uWZjPVxn4)
+
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
 
@@ -141,6 +143,8 @@ Don't forget to give the project a star! Thanks again!
 
 5. Open a Pull Request
 
+If you have any questions, please open an issue or go on discord's project [Discord](https://discord.gg/2uWZjPVxn4).
+
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 <!-- CONTACT -->
 
@@ -151,6 +155,8 @@ Don't forget to give the project a star! Thanks again!
 Lucas Casado  - lucas.casado@epitech.eu
 
 Project Link: [https://github.com/LucasCasadoPrime/CSDLib/](https://github.com/LucasCasadoPrime/CSDLib/)
+
+Discord Link: [Discord](https://discord.gg/2uWZjPVxn4)
 
 <!-- ACKNOWLEDGMENTS -->
 
