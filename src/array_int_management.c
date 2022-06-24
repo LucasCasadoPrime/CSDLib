@@ -9,18 +9,8 @@
 
 #include "../includes/include.h"
 
-// Get the size of an array
-int get_array_size(int *array)
-{
-    int i = 0;
-
-    while (array[i] != 0)
-        i++;
-    return (i);
-}
-
 // Append at the end of tab 
-int *push_back(int *arr, int val, int arr_size)
+int *push_back_int(int *arr, int val, int arr_size)
 {
     int *new_arr = malloc(sizeof(int) * (arr_size + 1));
 
@@ -32,7 +22,7 @@ int *push_back(int *arr, int val, int arr_size)
 }
 
 // Append at the begining of tab
-int *push_front(int *arr, int val, int arr_size)
+int *push_front_int(int *arr, int val, int arr_size)
 {
     int *new_arr = malloc(sizeof(int) * (arr_size + 2));
     arr_size = arr_size + 1;
@@ -45,35 +35,38 @@ int *push_front(int *arr, int val, int arr_size)
 }
 
 // Append at the index of tab
-int *insert(int *arr, int val, int arr_size, int val_pos)
+int *insert_int(int *arr, int val, int arr_size, int val_pos)
 {
-    int i = 0;
-    arr_size = arr_size + 1;
+    int *new_arr = malloc(sizeof(int) * (arr_size + 1));
 
-    for (i = arr_size-1; i >= val_pos; i--)
-        arr[i] = arr[i - 1];
-    arr[val_pos - 1] = val;
+    (void) val;
 
-    return(arr);
-}
-
-
-// Remove the last element of tab
-int *pop_back(int *arr, int arr_size)
-{
-    arr_size = arr_size - 1;
-    int *new_arr = malloc(sizeof(int) * (arr_size+1));
-
-    for (int i = 0; i < arr_size; i++)
-        new_arr[i] = arr[i];
-    new_arr[arr_size] = 0;
-
+    for (int i = 0; i < arr_size; i++) {
+        if (i<val_pos)
+            new_arr[i] = arr[i];
+        else if (i > val_pos)
+            new_arr[i+1] = arr[i];
+        else {
+            new_arr[val_pos] = val;
+            new_arr[val_pos+1] = arr[i];
+        }
+    }
     return (new_arr);
 }
 
 
+// Remove the last element of tab of int
+int *pop_back_int(int *arr, int arr_size)
+{
+    int *new_arr = malloc(sizeof(int) * (arr_size - 1));
+
+    for (int i = 0; i < arr_size - 1; i++)
+        new_arr[i] = arr[i];
+    return (new_arr);
+}
+
 // Remove the first element of tab
-int *pop_front(int *arr, int arr_size)
+int *pop_front_int(int *arr, int arr_size)
 {
     int *new_arr = malloc(sizeof(int) * (arr_size - 1));
 
@@ -85,7 +78,7 @@ int *pop_front(int *arr, int arr_size)
 
 
 // Remove the value of tab 
-int *delete_value(int *arr, int val, int arr_size)
+int *delete_int(int *arr, int val, int arr_size)
 {
     int i = 0;
     int j = 0;
