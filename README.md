@@ -156,7 +156,7 @@ Lucas Casado  - lucas.casado@epitech.eu
 
 Project Link: [https://github.com/LucasCasadoPrime/CSDLib/](https://github.com/LucasCasadoPrime/CSDLib/)
 
-Discord Link: [Discord](https://discord.gg/2uWZjPVxn4)
+Discord Link: [https://discord.gg/2uWZjPVxn4](https://discord.gg/2uWZjPVxn4)
 
 <!-- ACKNOWLEDGMENTS -->
 
