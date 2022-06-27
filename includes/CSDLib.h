@@ -20,7 +20,7 @@
 #include "string_management.h"
 #include "array_int_management.h"
 #include "file_management.h"
-#include "linked_list.h"
+#include "generic_system_linked_list.h"
 
 
 #endif /* !INCLUDE_H_ */

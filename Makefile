@@ -25,7 +25,7 @@ SRC	:=	$(SRCDIR)/array_int_management.c \
 		$(SRCDIR)/array_str_management.c \
 		$(SRCDIR)/file_management.c \
 		$(SRCDIR)/string_management.c \
-		$(SRCDIR)/linked_list.c \
+		$(SRCDIR)/generic_system_linked_list.c \
 
 OBJ	:=	$(SRC:.c=.o)	\
 
