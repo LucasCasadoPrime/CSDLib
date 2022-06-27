@@ -88,6 +88,21 @@ make lib
 cd ./lib
 ls
 ```
+4. Get the .a file and copy paste it in your project
+
+5. Compile your project with the lib to use it
+make all .o
+```sh
+gcc -c Test.c -o Test.o
+```
+make binaries with the lib
+```sh
+gcc -o Test Test.o ./lib/CSDLIB.a
+```
+Don't forget to include the lib in your project
+```c
+#include "CSDLIB.h"
+```
 
 <!-- USAGE EXAMPLES -->
 
@@ -97,10 +112,14 @@ This lib have five modules and multiple functions in them to help you.
 The modules are :
 
 . Strings management
+
 . String's Array management
+
 . Int's Array management
+
 . Files management
-. Linked list management 
+
+. Linked list generic system 
 
 For your future problems, please refer to the [Documentation]() (soon)
 
@@ -115,7 +134,7 @@ I check the features when I'm sure that the code will work perfectly, Some will 
 - [x] String's Array management
 - [x] Int's Array management
 - [x] Files management
-- [x] Linked list management 
+- [x] Linked list generic system 
 
 <!-- CONTRIBUTING -->
 
@@ -164,9 +183,6 @@ Discord Link: [https://discord.gg/2uWZjPVxn4](https://discord.gg/2uWZjPVxn4)
 
 [Linked list tuto](https://www.codegrepper.com/code-examples/c/linked++list+in+c)
 
-<!-- MARKDOWN LINKS & IMAGES -->
-
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 <!-- CONTRIBUTOR -->
 
