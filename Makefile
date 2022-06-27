@@ -32,7 +32,6 @@ OBJ	:=	$(SRC:.c=.o)	\
 ## ---- FILES-TEST ---- ##
 SRCTEST	:=	$(TESTDIR)/test_array_int.c \
 		$(TESTDIR)/test_array_str.c \
-		$(TESTDIR)/test_file.c \
 		$(TESTDIR)/test_string.c \
 		$(TESTDIR)/test_linked_list.c
 
