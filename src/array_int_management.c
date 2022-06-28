@@ -1,9 +1,11 @@
 /*
-** EPITECH PROJECT, 2021
-** Epitech-Jam-30.4.21
+** EPITECH PROJECT, 2022
+** CSDLib
 ** File description:
-** main
+** array_int_management
 */
+
+
 
 // Simple int array management
 
