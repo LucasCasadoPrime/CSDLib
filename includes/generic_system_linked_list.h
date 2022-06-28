@@ -78,4 +78,32 @@ node_t *add_node_ll(node_t *head, void* data, node_t *prev, node_t *next);
 */
 node_t *remove_ll(node_t *head, void* data);
 
+/*! \fn node_t *reverse_ll(node_t *head)
+    \brief Reverse a linked list.
+    \param list The linked list.
+    \return The new linked list.
+*/
+node_t *reverse_ll(node_t *head);
+
+/*! \fn void swap_node_in_list(node_t *node1, node_t *node2)
+    \brief Swap two nodes between two linked lists.
+    \param node1 The first node.
+    \param node2 The second node.
+*/
+void swap_node_in_list(node_t *node1, node_t *node2);
+
+/*! \fn node_t *bubble_sort_ll(node_t *head)
+    \brief Bubble sort a linked list.
+    \param list The linked list.
+    \return The sorted linked list.
+*/
+node_t *bubble_sort_ll(node_t *head);
+
+/*! void print_ll(node_t *head , char *mode)
+    \brief Print a linked list.
+    \param list The linked list.
+    \param mode The mode of the print.
+*/
+void print_ll(node_t *head, char *mode);
+
 #endif /* !LINKED_LIST_H_ */
