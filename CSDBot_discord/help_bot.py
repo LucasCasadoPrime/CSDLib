@@ -1,4 +1,5 @@
 import os
+from youtubesearchpython import *
 
 def get_function_name(directory):
     tab = []
@@ -67,3 +68,7 @@ def get_help():
 
     res += '```'
     return res
+
+def get_video_link(keyword):
+    videosSearch = VideosSearch(keyword, limit = 1)
+    return(videosSearch.result()['result'][0]['link'])

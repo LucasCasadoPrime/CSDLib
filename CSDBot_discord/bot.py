@@ -3,6 +3,12 @@ import discord
 import help_bot as hb
 from dotenv import load_dotenv
 import discord.ext.commands as commands
+from discord import FFmpegPCMAudio, PCMVolumeTransformer
+import youtube_dl as ydl
+from discord.utils import *
+
+
+FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5','options': '-vn'}
 
 load_dotenv('bot.env')
 
@@ -67,6 +73,7 @@ async def tree(ctx):
 async def help_bot(ctx):
     await ctx.send(hb.get_help())
 
+
 @client.command()
 async def poll(ctx):
     options = ['1️⃣ Yes Or No', '2️⃣ Multiple Choice']
@@ -110,5 +117,26 @@ async def poll(ctx):
         await msg_embed.add_reaction('2️⃣')
         await msg_embed.add_reaction('3️⃣')
         await msg_embed.add_reaction('4️⃣')
+
+
+@client.command()
+async def ping(ctx):
+    await ctx.send(f'Pong! {round(client.latency * 1000)}ms')
+
+
+@client.command()
+async def play(ctx, keyword):
+    YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist':'True'}
+    FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
+    connect_voice  = await ctx.author.voice.channel.connect()
+    url = hb.get_video_link(keyword)
+
+
+    with ydl.YoutubeDL(YDL_OPTIONS) as ytdl:
+        info = ytdl.extract_info(url, download=False)
+    URL = info['formats'][0]['url']
+    connect_voice.play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
+
+
 
 client.run(TOKEN)
