@@ -1,2 +1,4 @@
 example_doxygen.txt
 .vscode
+__pycache__
+bot.env
