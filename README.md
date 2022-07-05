@@ -85,6 +85,10 @@ make
 ```bash
 make install
 ```
+4. Then to refresh shared lib cache run:
+```sh
+sudo ldconfig
+``` 
 Here you go !
 <!-- USAGE EXAMPLES -->
 

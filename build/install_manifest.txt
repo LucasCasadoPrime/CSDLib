@@ -1,9 +1,0 @@
-/usr/local/lib/libCSDLib.so.1.0.0
-/usr/local/lib/libCSDLib.so.1
-/usr/local/lib/libCSDLib.so
-/usr/local/include/CSDLib/CSDLib.h
-/usr/local/include/CSDLib/array_int_management.h
-/usr/local/include/CSDLib/array_str_management.h
-/usr/local/include/CSDLib/file_management.h
-/usr/local/include/CSDLib/generic_system_linked_list.h
-/usr/local/include/CSDLib/string_management.h

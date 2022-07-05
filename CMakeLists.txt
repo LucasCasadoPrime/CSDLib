@@ -6,17 +6,17 @@ project(CSDLib VERSION 1.0.0 DESCRIPTION "Usefull C library to make your project
 
 # Declare the library target.
 add_library(${PROJECT_NAME} SHARED
-    src/array_int_management.c
-    src/array_str_management.c
-    src/file_management.c
-    src/generic_system_linked_list.c
-    src/string_management.c
-    includes/CSDLib.h
-    includes/array_int_management.h
-    includes/array_str_management.h
-    includes/file_management.h
-    includes/generic_system_linked_list.h
-    includes/string_management.h
+    "src/array_int_management.c"
+    "src/array_str_management.c"
+    "src/file_management.c"
+    "src/generic_system_linked_list.c"
+    "src/string_management.c"
+    "includes/CSDLib.h"
+    "includes/array_int_management.h"
+    "includes/array_str_management.h"
+    "includes/file_management.h"
+    "includes/generic_system_linked_list.h"
+    "includes/string_management.h"
 )
 
 # Set the version property.
@@ -26,7 +26,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
 set_target_properties(${PROJECT_NAME} PROPERTIES SOVERSION ${PROJECT_VERSION_MAJOR})
 
 # Configure the directories to search for header files.
-target_include_directories(${PROJECT_NAME} PRIVATE source)
+target_include_directories(${PROJECT_NAME} PRIVATE includes)
 
 # Set the public header property to the one with the actual API.
 set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER
