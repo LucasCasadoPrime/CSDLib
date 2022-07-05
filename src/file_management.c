@@ -9,7 +9,6 @@
 
 #include "../includes/CSDLib.h"
 
-// open a file
 FILE *open_file(char *file_name, char *mode)
 {
     FILE *file = fopen(file_name, mode);
@@ -21,7 +20,6 @@ FILE *open_file(char *file_name, char *mode)
     return (file);
 }
 
-// get nb of lines in a file
 int get_nb_lines(char *file_name)
 {
     FILE *file = open_file(file_name, "r");
@@ -36,33 +34,27 @@ int get_nb_lines(char *file_name)
     return (nb_lines);
 }
 
-// delete a file
 void delete_file(char *file_name)
 {
     if (remove(file_name) != 0)
         printf("Error: file %s not found\n", file_name);
 }
 
-// write a string in a file
 void write_str_in_file(FILE *file, char *str)
 {
     fprintf(file, "%s", str);
 }
 
-// write int in a file
 void write_int_in_file(FILE *file, int number)
 {
     fprintf(file, "%d", number);
 }
 
-// write a char in a file
 void write_char_in_file(FILE *file, char c)
 {
     fprintf(file, "%c", c);
 }
 
-
-// read a file
 char *read_file(char *file_name)
 {
     FILE *file = open_file(file_name, "r");
@@ -78,8 +70,6 @@ char *read_file(char *file_name)
     return (str);
 }
 
-
-// print a file
 void print_file(FILE *file)
 {
     char *str = NULL;
@@ -88,9 +78,8 @@ void print_file(FILE *file)
     while (getline(&str, &len, file) != -1)
         printf("%s", str);
     free(str);
-} 
+}
 
-// get size of file
 int file_size(char *file_name)
 {
     struct stat *buf;
@@ -103,7 +92,6 @@ int file_size(char *file_name)
     return(file_size);
 }
 
-// get type of file
 char *file_type(char *file_name)
 {
     struct stat *buf;
@@ -130,7 +118,6 @@ char *file_type(char *file_name)
     return (file_type);
 }
 
-// get time of last modification
 char *file_last_modif_time(char *file_name)
 {
     struct stat *buf;
@@ -144,7 +131,6 @@ char *file_last_modif_time(char *file_name)
     return (file_time);
 }
 
-// get time of last status change
 char *file_change_status_time(char *file_name)
 {
     struct stat *buf;
@@ -158,7 +144,6 @@ char *file_change_status_time(char *file_name)
     return (file_time);
 }
 
-// get time of last access
 char *file_acces_time(char *file_name)
 {
     struct stat *buf;

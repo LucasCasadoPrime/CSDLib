@@ -9,8 +9,6 @@
 
 #include "../includes/CSDLib.h"
 
-
-// create a new node at the beginning of the list
 node_t *push_front_ll(node_t *head, void* data) {
     node_t *new_node = (node_t *)malloc(sizeof(node_t));
     new_node->data = data;
@@ -18,7 +16,6 @@ node_t *push_front_ll(node_t *head, void* data) {
     return new_node;
 }
 
-// create a new node at the end of the list
 node_t *push_back_ll(node_t *head, void* data)
 {
     node_t *new_node = (node_t *)malloc(sizeof(node_t));
@@ -36,7 +33,6 @@ node_t *push_back_ll(node_t *head, void* data)
     return(head);
 }
 
-// add node between two nodes
 node_t *add_node_ll(node_t *head, void* data, node_t *prev, node_t *next)
 {
     node_t *new_node = (node_t *)malloc(sizeof(node_t));
@@ -46,7 +42,6 @@ node_t *add_node_ll(node_t *head, void* data, node_t *prev, node_t *next)
     return(head);
 }
 
-// remove the first node of the list
 node_t *pop_front_ll(node_t *head)
 {
     node_t *tmp = head;
@@ -55,7 +50,6 @@ node_t *pop_front_ll(node_t *head)
     return(head);
 }
 
-// remove the last node of the list
 node_t *pop_back_ll(node_t *head)
 {
     node_t *tmp = head;
@@ -66,7 +60,6 @@ node_t *pop_back_ll(node_t *head)
     return(head);
 }
 
-// remove a node from the list
 node_t *remove_ll(node_t *head, void* data)
 {
     node_t *tmp = head;
@@ -80,7 +73,6 @@ node_t *remove_ll(node_t *head, void* data)
     return(head);
 }
 
-// reverse the list
 node_t *reverse_ll(node_t *head)
 {
     node_t *tmp = head;
@@ -97,7 +89,6 @@ node_t *reverse_ll(node_t *head)
     return(head);
 }
 
-// swap two nodes between two lists
 void swap_node_in_list(node_t *node1, node_t *node2)
 {
     void *tmp = node1->data;
@@ -105,7 +96,6 @@ void swap_node_in_list(node_t *node1, node_t *node2)
     node2->data = tmp;
 }
 
-// bubble sort the list
 node_t *bubble_sort_ll(node_t *head)
 {
     node_t *tmp = head;
@@ -123,7 +113,6 @@ node_t *bubble_sort_ll(node_t *head)
     return(head);
 }
 
-// print the list content depending on the type of data
 void print_ll(node_t *head , char *mode)
 {
     node_t *tmp = head;

@@ -10,7 +10,6 @@
 #include "../includes/CSDLib.h"
 
 
-// create a strings array from a file
 char **create_str_array_from_file(char *file_name)
 {
     FILE *file = open_file(file_name, "r");
@@ -27,7 +26,6 @@ char **create_str_array_from_file(char *file_name)
     return(str_array);
 }
 
-// add a string to the end of the array
 char **push_back_str(char **arr, char *str, int arr_size)
 {
     char **new_arr = malloc(sizeof(char *) * (arr_size + 1));
@@ -41,7 +39,6 @@ char **push_back_str(char **arr, char *str, int arr_size)
     return (new_arr);
 }
 
-// add a string to the beginning of the array
 char **push_front_str(char **arr, char *str, int arr_size)
 {
     char **new_arr = malloc(sizeof(char *) * (arr_size + 1));
@@ -56,7 +53,6 @@ char **push_front_str(char **arr, char *str, int arr_size)
     return (new_arr);
 }
 
-// add a string to the array at the given index
 char **insert_str(char **arr, char *str, int arr_size, int val_pos)
 {
     char **new_arr = malloc(sizeof(char *) * (arr_size + 1));
@@ -79,7 +75,6 @@ char **insert_str(char **arr, char *str, int arr_size, int val_pos)
     return (new_arr);
 }
 
-// remove a string at the end of the array
 char **pop_back_str(char **arr, int arr_size)
 {
     char **new_arr = malloc(sizeof(char *) * (arr_size - 1));
@@ -93,7 +88,6 @@ char **pop_back_str(char **arr, int arr_size)
     return (new_arr);
 }
 
-// remove a string at the beginning of the array
 char **pop_front_str(char **arr, int arr_size)
 {
     char **new_arr = malloc(sizeof(char *) * (arr_size - 1));
@@ -107,7 +101,6 @@ char **pop_front_str(char **arr, int arr_size)
     return (new_arr);
 }
 
-// remove a string at the given index
 char **delete_str(char **arr, int arr_size, int val_pos)
 {
     char **new_arr = malloc(sizeof(char *) * (arr_size - 1));
@@ -130,8 +123,6 @@ char **delete_str(char **arr, int arr_size, int val_pos)
     return(new_arr);
 }
 
-// get separtor you want
-// Code of Laurent Amat (@github: Lqvrent)
 int my_is_sep(const char c, const char *separator)
 {
     int is_sep = 0;
@@ -145,8 +136,6 @@ int my_is_sep(const char c, const char *separator)
     return (is_sep);
 }
 
-// get number of words in a string
-// Code of Laurent Amat (@github: Lqvrent)
 int get_nb_words(char *str, const char *separator)
 {
     int is_sep = 0;
@@ -165,9 +154,6 @@ int get_nb_words(char *str, const char *separator)
     return (nb_words);
 }
 
-
-// split a string into an array of words
-// Code of Laurent Amat (@github: Lqvrent)
 char **my_str_to_word_array(char *str, const char *separator)
 {
     char **array = malloc(sizeof(char *) * (get_nb_words(str, separator) + 1));

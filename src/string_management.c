@@ -9,7 +9,6 @@
 
 #include "../includes/CSDLib.h"
 
-// Cut a string a the index number you want 
 char *cut_str(int num, char *str)
 {
     int i = 0;
@@ -27,8 +26,6 @@ char *cut_str(int num, char *str)
     return (new_str);
 }
 
-
-// Remplace a string by another one
 char *replace_str(char *str, char *str2)
 {
     str = malloc(sizeof(char) * (strlen(str2) + 1));
@@ -39,7 +36,6 @@ char *replace_str(char *str, char *str2)
     return (str);
 }
 
-// Replace all occurences of a char in a string but can't delete the char
 char *replace_char(char *str, char c1, char c2)
 {   
     char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
@@ -55,7 +51,6 @@ char *replace_char(char *str, char c1, char c2)
     return (new_str);
 }
 
-// Count the number of occurences of a char in a string
 int count_char(char *str, char c)
 {
     int count = 0;
@@ -67,7 +62,6 @@ int count_char(char *str, char c)
     return (count);
 }
 
-// insert substr at index given
 char *insert_substr(char *str, char *substr, int pos)
 {
     char *new_str = malloc(sizeof(char) * (strlen(str) + strlen(substr) + 1));
@@ -108,7 +102,6 @@ char *delete_substr(char *str, char *substr)
     return (new_str);
 }
 
-// Count the number of occurences of a substr in a string
 int count_substr(char *str, char *substr)
 {
     int count = 0;
@@ -128,7 +121,6 @@ int count_substr(char *str, char *substr)
     return (count);
 }
 
-// check if a string starts with a substr
 int str_start_with(char *str, char *substr)
 {
     int len = strlen(str);
@@ -157,7 +149,6 @@ int str_end_with(char *str, char *substr)
     return (1);
 }
 
-// Delete all occurences of a char in a string
 char *delete_char(char *str, char c)
 {
     char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
@@ -172,7 +163,6 @@ char *delete_char(char *str, char c)
     return (new_str);
 }
 
-// Insert a char in a string at a specific index
 char *insert_char(char *str, char c, int pos)
 {
     int len = strlen(str);
@@ -187,7 +177,6 @@ char *insert_char(char *str, char c, int pos)
     return (new_str);
 }
 
-// Convert a string to lowercase
 char *str_to_lower(char *str)
 {
     char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
@@ -199,7 +188,6 @@ char *str_to_lower(char *str)
     return (new_str);
 }
 
-// Convert a string to uppercase
 char *str_to_upper(char *str)
 {
     char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
@@ -211,7 +199,6 @@ char *str_to_upper(char *str)
     return (new_str);
 }
 
-// capitalize the first and last letter of each word of a string
 char *str_to_capital(char *str)
 {
     char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
@@ -227,7 +214,6 @@ char *str_to_capital(char *str)
     return (new_str);
 }
 
-// reverse a string
 char *str_reverse(char *str)
 {
     char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
@@ -239,7 +225,6 @@ char *str_reverse(char *str)
     return (new_str);
 }
 
-// Check if a string is composed only with letters
 int str_is_alpha(char *str)
 {
     for (int i = 0; str[i] != 0; i++) {
@@ -249,7 +234,6 @@ int str_is_alpha(char *str)
     return (1);
 }
 
-// Check if a string is composed only with numbers
 int str_is_numeric(char *str)
 {
     for (int i = 0; str[i] != 0; i++) {
@@ -259,7 +243,6 @@ int str_is_numeric(char *str)
     return (1);
 }
 
-// Check if a string is composed only with letters and numbers
 int str_is_alphanum(char *str)
 {
     for (int i = 0; str[i] != 0; i++) {
