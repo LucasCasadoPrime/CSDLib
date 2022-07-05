@@ -85,7 +85,7 @@ make
 ```sh
 make install
 ```
-4. Then to refresh shared lib cache run:
+4. Then run to refresh shared lib cache:
 ```sh
 sudo ldconfig
 ``` 
@@ -168,6 +168,7 @@ Discord Link: [https://discord.gg/2uWZjPVxn4](https://discord.gg/2uWZjPVxn4)
 ## Acknowledgments
 
 [Linked list tuto](https://www.codegrepper.com/code-examples/c/linked++list+in+c)
+[Cmake tuto](https://www.pragmaticlinux.com/2022/02/create-a-shared-library-in-c-with-cmake/)
 
 
 <!-- CONTRIBUTOR -->
