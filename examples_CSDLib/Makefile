@@ -2,7 +2,7 @@ CC	= gcc -g3
 
 SRC	= src/main.c
 
-NAME	= test
+NAME	= test_CSDLIB
 
 OBJ	=  $(SRC:.c=.o)
 
