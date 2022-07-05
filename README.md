@@ -72,9 +72,10 @@ The last line is not require but is very usefull and give you acces to function'
 ```sh
 git clone https://github.com/your_username_/CSDLib.git
 ```
-2. The library needs to be compile with CMake.<br />
+2. The library needs to be compile with CMake.
+
 If you're new to CMake, heres the commands to get you started:
-```bash
+```sh
 mkdir build
 cd build
 cmake ..
@@ -82,7 +83,6 @@ make
 ```
 3. To install the library, just run the following command:
 ```sh
-```bash
 make install
 ```
 4. Then to refresh shared lib cache run:
