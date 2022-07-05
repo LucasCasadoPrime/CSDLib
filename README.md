@@ -72,33 +72,20 @@ The last line is not require but is very usefull and give you acces to function'
 ```sh
 git clone https://github.com/your_username_/CSDLib.git
 ```
-2. Compile and Create the lib
-
-```sh
+2. The library needs to be compile with CMake.<br />
+If you're new to CMake, heres the commands to get you started:
+```bash
+mkdir build
+cd build
+cmake ..
 make
-make lib
 ```
-3. Check the .a file in the  ./lib directory
+3. To install the library, just run the following command:
 ```sh
-cd ./lib
-ls
+```bash
+make install
 ```
-4. Get the .a file and copy paste it in your project
-
-5. Compile your project with the lib to use it
-make all .o
-```sh
-gcc -c Test.c -o Test.o
-```
-make binaries with the lib
-```sh
-gcc -o Test Test.o ./lib/CSDLIB.a
-```
-Don't forget to include the lib in your project
-```c
-#include "CSDLIB.h"
-```
-
+Here you go !
 <!-- USAGE EXAMPLES -->
 
 ## Usage
