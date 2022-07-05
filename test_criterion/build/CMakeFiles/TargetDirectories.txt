@@ -1,0 +1,3 @@
+/home/casado/Documents/code/C/CSDLib/test_criterion/build/CMakeFiles/unit_tests.dir
+/home/casado/Documents/code/C/CSDLib/test_criterion/build/CMakeFiles/edit_cache.dir
+/home/casado/Documents/code/C/CSDLib/test_criterion/build/CMakeFiles/rebuild_cache.dir
