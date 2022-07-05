@@ -5,8 +5,6 @@
 ** string_management
 */
 
-// Manage easyly the strings
-
 #include "../includes/CSDLib.h"
 
 char *cut_str(int num, char *str)
@@ -32,7 +30,6 @@ char *replace_str(char *str, char *str2)
     for (int i = 0; str2[i] != '\0'; i++)
         str[i] = str2[i];
     str[strlen(str2)] = '\0';
-    
     return (str);
 }
 
@@ -195,7 +192,6 @@ char *str_to_upper(char *str)
     for (int i = 0; str[i]; i++)
         new_str[i] = toupper(str[i]);
     new_str[strlen(str)] = '\0';
-
     return (new_str);
 }
 

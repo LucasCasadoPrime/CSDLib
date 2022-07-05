@@ -5,10 +5,6 @@
 ** array_int_management
 */
 
-
-
-// Simple int array management
-
 #include "../includes/CSDLib.h"
 
 int *push_back_int(int *arr, int val, int arr_size)
@@ -18,7 +14,6 @@ int *push_back_int(int *arr, int val, int arr_size)
     for (int i = 0; i < arr_size+1; i++)
         new_arr[i] = arr[i];
     new_arr[arr_size] = val;
-
     return (new_arr);
 }
 
@@ -30,15 +25,12 @@ int *push_front_int(int *arr, int val, int arr_size)
     for (int i = 0; i < arr_size; i++)
         new_arr[i + 1] = arr[i];
     new_arr[0] = val;
-
     return (new_arr);
 }
 
 int *insert_int(int *arr, int val, int arr_size, int val_pos)
 {
     int *new_arr = malloc(sizeof(int) * (arr_size + 1));
-
-    (void) val;
 
     for (int i = 0; i < arr_size; i++) {
         if (i<val_pos)
@@ -68,7 +60,6 @@ int *pop_front_int(int *arr, int arr_size)
 
     for (int i = 0; i < arr_size - 1; i++)
         new_arr[i] = arr[i + 1];
-
     return (new_arr);
 }
 
@@ -84,6 +75,5 @@ int *delete_int(int *arr, int val, int arr_size)
             j++;
         }
     }
-
     return (new_arr);
 }

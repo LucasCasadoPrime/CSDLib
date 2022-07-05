@@ -5,10 +5,7 @@
 ** array_str_management
 */
 
-// Simple str array management
-
 #include "../includes/CSDLib.h"
-
 
 char **create_str_array_from_file(char *file_name)
 {
@@ -22,7 +19,6 @@ char **create_str_array_from_file(char *file_name)
     for (int i = 0; getline(&str, &s, file) != -1; i++) {
         str_array[i] = strdup(str);
     }
-
     return(str_array);
 }
 
@@ -35,7 +31,6 @@ char **push_back_str(char **arr, char *str, int arr_size)
         new_arr[i] = arr[i];
     }
     new_arr[arr_size]= str;
-
     return (new_arr);
 }
 
@@ -49,7 +44,6 @@ char **push_front_str(char **arr, char *str, int arr_size)
     }
     new_arr[0] = malloc(sizeof(char));
     new_arr[0]= str;
-
     return (new_arr);
 }
 
@@ -71,7 +65,6 @@ char **insert_str(char **arr, char *str, int arr_size, int val_pos)
             new_arr[i] = arr[i];
         }
     }
-
     return (new_arr);
 }
 
@@ -84,7 +77,6 @@ char **pop_back_str(char **arr, int arr_size)
         new_arr[i] = malloc(sizeof(char *));
         new_arr[i] = arr[i];
     }
-
     return (new_arr);
 }
 
@@ -97,7 +89,6 @@ char **pop_front_str(char **arr, int arr_size)
         new_arr[i] = malloc(sizeof(char *));
         new_arr[i] = arr[i+1];
     }
-    
     return (new_arr);
 }
 

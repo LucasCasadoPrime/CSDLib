@@ -5,8 +5,6 @@
 ** linked_list
 */
 
-// Simple linked_list management
-
 #include "../includes/CSDLib.h"
 
 node_t *push_front_ll(node_t *head, void* data) {

@@ -5,8 +5,6 @@
 ** file_management
 */
 
-// simple file management
-
 #include "../includes/CSDLib.h"
 
 FILE *open_file(char *file_name, char *mode)
