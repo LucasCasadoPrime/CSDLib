@@ -11,6 +11,7 @@ add_library(${PROJECT_NAME} SHARED
     src/file_management.c
     src/generic_system_linked_list.c
     src/string_management.c
+    includes/CSDLib.h
     includes/array_int_management.h
     includes/array_str_management.h
     includes/file_management.h
