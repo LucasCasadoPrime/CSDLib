@@ -72,26 +72,30 @@ The last line is not require but is very usefull and give you acces to function'
 ```sh
 git clone https://github.com/your_username_/CSDLib.git
 ```
-2. The library needs to be compile with CMake.
+2. To install the library, you need to run this command:
 
-If you're new to CMake, heres the commands to get you started:
 ```sh
-mkdir build
-cd build
-cmake ..
-make
+bash install.sh
 ```
-3. To install the library, just run the following command:
+3. To launch unit tests, you need to run this command:
+
 ```sh
-make install
+bash unit_test.sh
 ```
-4. Then run to refresh shared lib cache:
+Here, you can see the result of the tests.
+
+Now you can use the library!
+Don't forget to include the library in your project and the compilation flag!
+
 ```sh
-sudo ldconfig
-``` 
-Here you go !
+#include "CSDLib/CSDLib.h"
+```
+
+```sh
+gcc -Wall -Wextra -Werror -I./include -lCSDlib -o my_program
+```
+
 <!-- USAGE EXAMPLES -->
-
 ## Usage
 
 This lib have five modules and multiple functions in them to help you.

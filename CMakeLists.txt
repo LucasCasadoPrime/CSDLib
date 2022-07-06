@@ -4,19 +4,21 @@ cmake_minimum_required(VERSION 3.20)
 # Specify the project info.
 project(CSDLib VERSION 1.0.0 DESCRIPTION "Usefull C library to make your project faster and easier")
 
+set(CSD "CSDLib/")
+
 # Declare the library target.
 add_library(${PROJECT_NAME} SHARED
-    "src/array_int_management.c"
-    "src/array_str_management.c"
-    "src/file_management.c"
-    "src/generic_system_linked_list.c"
-    "src/string_management.c"
-    "includes/CSDLib.h"
-    "includes/array_int_management.h"
-    "includes/array_str_management.h"
-    "includes/file_management.h"
-    "includes/generic_system_linked_list.h"
-    "includes/string_management.h"
+    "CSDLib/src/array_int_management.c"
+    "CSDLib/src/array_str_management.c"
+    "CSDLib/src/file_management.c"
+    "CSDLib/src/generic_system_linked_list.c"
+    "CSDLib/src/string_management.c"
+    "CSDLib/includes/CSDLib.h"
+    "CSDLib/includes/array_int_management.h"
+    "CSDLib/includes/array_str_management.h"
+    "CSDLib/includes/file_management.h"
+    "CSDLib/includes/generic_system_linked_list.h"
+    "CSDLib/includes/string_management.h"
 )
 
 # Set the version property.
@@ -30,7 +32,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE includes)
 
 # Set the public header property to the one with the actual API.
 set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER
-    "includes/CSDLib.h;includes/array_int_management.h;includes/array_str_management.h;includes/file_management.h;includes/generic_system_linked_list.h;includes/string_management.h")
+    "CSDLib/includes/CSDLib.h;CSDLib/includes/array_int_management.h;CSDLib/includes/array_str_management.h;CSDLib/includes/file_management.h;CSDLib/includes/generic_system_linked_list.h;CSDLib/includes/string_management.h")
 
 # For access to standard installation directory variables (CMAKE_INSTALL_xDIR).
 include(GNUInstallDirs)
