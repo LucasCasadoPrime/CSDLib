@@ -1,5 +1,5 @@
 # Specify the minimum version.
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.16)
 
 # Specify the project info.
 project(CSDLib VERSION 1.0.0 DESCRIPTION "Usefull C library to make your project faster and easier")
