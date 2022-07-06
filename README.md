@@ -122,8 +122,9 @@ I check the features when I'm sure that the code will work perfectly, Some will 
 - [x] Files management
 - [x] Linked list generic system 
 
-<!-- CONTRIBUTING -->
+<p  align="right">(<a  href="#top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
 ## Contributing
 
   
@@ -155,13 +156,13 @@ If you have any questions, please open an issue or go on discord's project [Disc
 
 ## Contact
 
-  
-
 Lucas Casado  - lucas.casado@epitech.eu
 
 Project Link: [https://github.com/LucasCasadoPrime/CSDLib/](https://github.com/LucasCasadoPrime/CSDLib/)
 
 Discord Link: [https://discord.gg/2uWZjPVxn4](https://discord.gg/2uWZjPVxn4)
+
+<p  align="right">(<a  href="#top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
@@ -170,12 +171,16 @@ Discord Link: [https://discord.gg/2uWZjPVxn4](https://discord.gg/2uWZjPVxn4)
 [Linked list tuto](https://www.codegrepper.com/code-examples/c/linked++list+in+c)
 [Cmake tuto](https://www.pragmaticlinux.com/2022/02/create-a-shared-library-in-c-with-cmake/)
 
+<p  align="right">(<a  href="#top">back to top</a>)</p>
+
 
 <!-- CONTRIBUTOR -->
 
 ## Contributors
 
 Laurent Amat Github: [https://github.com/Lqvrent](https://github.com/Lqvrent)
+
+<p  align="right">(<a  href="#top">back to top</a>)</p>
 
 
 

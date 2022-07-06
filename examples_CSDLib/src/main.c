@@ -3,8 +3,8 @@
 
 int main()
 {
-    char *str = "Hello World!";
     printf("---------------------String_managemment.h----------------------------------\n\n");
+    char *str = "Hello World!";
     print_file(open_file("asigment_str.txt", "r"));
     printf("\n");
     printf("The basic string is: %s\n", str);
@@ -25,6 +25,8 @@ int main()
     printf("Check if the string is a number: %d\n", str_is_numeric(str));
     printf("Check if the string is alpha: %d\n", str_is_alpha(str));
     printf("Check if the string is alphanumeric: %d\n\n", str_is_alphanum(str));
+    
+    
     printf("---------------------Array_int_management.h----------------------------------\n\n");
     print_file(open_file("array_int.txt", "r"));
     printf("\n\n");
@@ -42,9 +44,11 @@ int main()
     new_array = pop_front_int(array, array_size);
     printf("The new array after pop_front_int the array is: %d, %d, %d, %d\n", new_array[0], new_array[1], new_array[2], new_array[3]);
     new_array = insert_int(array, 6, array_size, 2);
-    printf("The new array after insert_int the array is: %d, %d, %d, %d, %d, %d\n\n", new_array[0], new_array[1], new_array[2], new_array[3], new_array[4], new_array[5]);
-    // new_array = delete_int(array, array_size, 2);
-    // printf("The new array after delete_int the array is: %d, %d, %d, %d, %d\n", new_array[0], new_array[1], new_array[2], new_array[3], new_array[4]);
+    printf("The new array after insert_int the array is: %d, %d, %d, %d, %d, %d\n", new_array[0], new_array[1], new_array[2], new_array[3], new_array[4], new_array[5]);
+    new_array = delete_int(array, 2, array_size);
+    printf("The new array after delete_int the array is: %d, %d, %d, %d\n\n", new_array[0], new_array[1], new_array[2], new_array[3]);
+    
+    
     printf("---------------------Array_str_management.h----------------------------------\n\n");
     char **str_array = malloc(sizeof(char *) * (2));
     char **new_str_array = NULL;
@@ -63,10 +67,13 @@ int main()
     printf("The new array after insert_str the array is: %s, %s\n", new_str_array[0], new_str_array[1]);
     new_str_array = delete_str(str_array, 2, 1);
     printf("The new array after delete_str the array is: %s\n\n", new_str_array[0]);
+    
+    
     printf("---------------------File_management.h----------------------------------\n\n");
     printf("This segment is complicate to show, so just check the file file_management.h in headers\n\n");
-    printf("---------------------generic_system_linked_list.h----------------------------------\n\n");
     
+    
+    printf("---------------------generic_system_linked_list.h----------------------------------\n\n");
     node_t *head = NULL;
     head = push_back_ll(head, (void*)2);
     head = push_back_ll(head, (void*)1);
@@ -97,6 +104,5 @@ int main()
     head = reverse_ll(head);
     printf("\nAfter reverse_ll the linked list is:\n");
     print_ll(head, "int");
-
     return (0);
 }
