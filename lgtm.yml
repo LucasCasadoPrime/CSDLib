@@ -1,5 +1,15 @@
-extraction:
+extraction: 
   c:
-     index:
-        build_command:
-        - ./install.sh
+    prepare:
+
+        packages:
+          - cmake
+    configure:
+      command:
+        - mkdir build
+        - cd build
+        - cmake ..
+    index:
+      build_command:
+        - cd build
+        - make
