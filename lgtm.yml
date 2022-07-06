@@ -1,8 +1,10 @@
 extraction: 
   cpp:
+    prepare:
+        packages:
+          - cmake
     configure:
       command:
-        - python
         - mkdir build
         - cd build
         - cmake ..
