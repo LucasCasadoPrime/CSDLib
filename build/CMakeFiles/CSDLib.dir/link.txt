@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,libCSDLib.so.1 -o libCSDLib.so.1.0.0 CMakeFiles/CSDLib.dir/CSDLib/src/array_int_management.c.o CMakeFiles/CSDLib.dir/CSDLib/src/array_str_management.c.o CMakeFiles/CSDLib.dir/CSDLib/src/file_management.c.o CMakeFiles/CSDLib.dir/CSDLib/src/generic_system_linked_list.c.o CMakeFiles/CSDLib.dir/CSDLib/src/string_management.c.o 

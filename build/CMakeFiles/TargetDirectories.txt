@@ -1,7 +1,0 @@
-/home/casado/Documents/code/C/CSDLib/build/CMakeFiles/CSDLib.dir
-/home/casado/Documents/code/C/CSDLib/build/CMakeFiles/edit_cache.dir
-/home/casado/Documents/code/C/CSDLib/build/CMakeFiles/rebuild_cache.dir
-/home/casado/Documents/code/C/CSDLib/build/CMakeFiles/list_install_components.dir
-/home/casado/Documents/code/C/CSDLib/build/CMakeFiles/install.dir
-/home/casado/Documents/code/C/CSDLib/build/CMakeFiles/install/local.dir
-/home/casado/Documents/code/C/CSDLib/build/CMakeFiles/install/strip.dir
