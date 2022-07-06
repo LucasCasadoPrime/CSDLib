@@ -1,5 +1,5 @@
 extraction:
   c:
-     configure:
-        command:
-        - bash ./install.sh
+     index:
+        build_command:
+        - ./install.sh
