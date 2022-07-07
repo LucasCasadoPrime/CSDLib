@@ -107,11 +107,11 @@ For your future problems, please refer to the [Documentation]() (soon)
 ## Roadmap 
 I check the features when I'm sure that the code will work perfectly, Some will be uncheck sometimes when I'll add new functions in the modules dont' worry.
 
-- [] Strings management
-- [] String's Array management
-- [] Int's Array management
-- [] Files management
-- [] Linked list generic system 
+- [x] Strings management
+- [x] String's Array management
+- [x] Int's Array management
+- [x] Files management
+- [x] Linked list generic system 
 
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
