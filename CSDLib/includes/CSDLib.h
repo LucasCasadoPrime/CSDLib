@@ -21,5 +21,6 @@
 #include "array_int_management.h"
 #include "file_management.h"
 #include "generic_system_linked_list.h"
+#include "garbage_collector.h"
 
 #endif /* !INCLUDE_H_ */

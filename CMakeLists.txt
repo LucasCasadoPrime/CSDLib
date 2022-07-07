@@ -13,6 +13,7 @@ add_library(${PROJECT_NAME} SHARED
     "CSDLib/src/file_management.c"
     "CSDLib/src/generic_system_linked_list.c"
     "CSDLib/src/string_management.c"
+    "CSDLib/src/garbage_collector.c"
     "CSDLib/includes/CSDLib.h"
     "CSDLib/includes/array_int_management.h"
     "CSDLib/includes/array_str_management.h"
@@ -32,7 +33,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE includes)
 
 # Set the public header property to the one with the actual API.
 set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER
-    "CSDLib/includes/CSDLib.h;CSDLib/includes/array_int_management.h;CSDLib/includes/array_str_management.h;CSDLib/includes/file_management.h;CSDLib/includes/generic_system_linked_list.h;CSDLib/includes/string_management.h")
+    "CSDLib/includes/CSDLib.h;CSDLib/includes/array_int_management.h;CSDLib/includes/array_str_management.h;CSDLib/includes/file_management.h;CSDLib/includes/generic_system_linked_list.h;CSDLib/includes/string_management.h;CSDLib/includes/garbage_collector.h")
 
 # For access to standard installation directory variables (CMAKE_INSTALL_xDIR).
 include(GNUInstallDirs)

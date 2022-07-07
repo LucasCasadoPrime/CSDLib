@@ -1,7 +1,0 @@
-With CSDLib you can asign a value a to a existing variable:
-    code :
-        char *str = "Hello";
-        str = replace(str, "CSDLib!");
-        printf("%s\n", str);
-    output:
-        "CSDLib"

@@ -1,6 +1,0 @@
-CSDLib
-is
-the
-best
-C
-library

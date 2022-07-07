@@ -34,7 +34,7 @@ echo -e "${YELLOW}CMake library installed succesfully !${NC}"
 
 # print mydoc-CSDLib
 echo -e "${YELLOW}Build mydoc_CSDLib...${NC}"
-cd ../doc/mydoc_CSDLib
+cd ../doc/.mydoc_CSDLib
 echo -e "${YELLOW}Printing mydoc_CSDLib...${NC}"
 make && ./mydoc_CSDLib
 echo -e "${YELLOW}Print mydoc_CSDLib succesfully !${NC}"
