@@ -96,8 +96,7 @@ The modules are :
 
 . Files management
 
-. Linked list generic system
-
+. Linked list generic system <br/>
 
 
 The particularities of CSDLib are :
@@ -124,7 +123,8 @@ I check the features when I'm sure that the code will work perfectly, Some will 
 - [x] String's Array management
 - [x] Int's Array management
 - [x] Files management
-- [x] Linked list generic system 
+- [x] Linked list generic system
+- [x] Garbage collector
 
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
