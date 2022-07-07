@@ -50,7 +50,7 @@ int main()
     
     
     printf("---------------------Array_str_management.h----------------------------------\n\n");
-    char **str_array = malloc(sizeof(char *) * (2));
+    char **str_array = my_malloc(sizeof(char *) * (2));
     char **new_str_array = NULL;
     str_array[0] = strdup("test");
     str_array[1] = strdup("test2");
