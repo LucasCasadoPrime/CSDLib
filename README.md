@@ -96,7 +96,18 @@ The modules are :
 
 . Files management
 
-. Linked list generic system 
+. Linked list generic system
+
+The particularities of CSDLib are :
+
+. All function are automatically free
+
+. Variable assignment is automaticly reallocated if needed
+
+. An system of linked list is available to help you to manage your data
+
+. A lot of functions added to help you to manage your data (based on python standard library)
+
 
 For your future problems, please refer to the [Documentation]() (soon)
 
