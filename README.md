@@ -25,7 +25,6 @@ An awesome C Lib that all beginners must have to start!
 		<li>
 			<a  href="#getting-started">Getting Started</a>
 				<ul>
-					<li><a  href="#prerequisites">Prerequisites</a></li>
 					<li><a  href="#installation">Installation</a></li>
 				</ul>
 		</li>
@@ -53,18 +52,6 @@ To be informed about the project, you can visit the [Discord](https://discord.gg
 
 ## Getting Started  
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-* bash
-```sh
-sudo apt update
-sudo apt install build-essential
-sudo apt-get install manpages-dev
-```
-The last line is not require but is very usefull and give you acces to function's manuals on your terminal
-
 ### Installation
 
 1. Clone the repo
@@ -87,7 +74,7 @@ Here, you can see the result of the tests.
 Now you can use the library!
 Don't forget to include the library in your project and the compilation flag!
 
-```sh
+```c
 #include "CSDLib/CSDLib.h"
 ```
 
@@ -120,11 +107,11 @@ For your future problems, please refer to the [Documentation]() (soon)
 ## Roadmap 
 I check the features when I'm sure that the code will work perfectly, Some will be uncheck sometimes when I'll add new functions in the modules dont' worry.
 
-- [x] Strings management
-- [x] String's Array management
-- [x] Int's Array management
-- [x] Files management
-- [x] Linked list generic system 
+- [] Strings management
+- [] String's Array management
+- [] Int's Array management
+- [] Files management
+- [] Linked list generic system 
 
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
