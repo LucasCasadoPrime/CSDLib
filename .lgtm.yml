@@ -4,6 +4,7 @@ extraction:
       packages:
         - cmake
         - build-essential
+        - g++-6
     configure:
       command:
         - mkdir build
