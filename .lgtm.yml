@@ -1,7 +1,8 @@
 extraction: 
   cpp:
     prepare:
-      - cmake
+      packages:
+        - cmake
     configure:
       command:
         - mkdir build
