@@ -3,6 +3,7 @@ extraction:
     prepare:
       packages:
         - cmake
+        - build-essential
     configure:
       command:
         - mkdir build
