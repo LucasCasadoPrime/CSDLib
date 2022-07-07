@@ -1,0 +1,14 @@
+With CSDLib you can use int array easier:  
+    code:
+        int array[5] = {1, 2, 3, 4, 5};
+        int array_size = NELEMS(array);
+        int *new_array = NULL; 
+        printf("The array is: %d, %d, %d, %d, %d\n", array[0], array[1], array[2], array[3], array[4]);
+        printf("The array size is: %d\n", array_size);
+        new_array = push_back_int(array, 6, array_size);
+        printf("The new array after push_back_int the array is: %d, %d, %d, %d, %d, %d\n", \ 
+            new_array[0], new_array[1], new_array[2], new_array[3], new_array[4], new_array[5]);
+    output:
+        "The array is: 1, 2, 3, 4, 5"
+        "The array size is: 5"
+        "The new array after push_back_int the array is: 1, 2, 3, 4, 5, 6"
