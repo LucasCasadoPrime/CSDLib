@@ -81,7 +81,7 @@ void print_file(FILE *file)
 int file_size(char *file_name)
 {
     struct stat *buf;
-    buf = malloc(sizeof(struct stat));
+    buf = my_malloc(sizeof(struct stat));
     int file_size = 0;
 
     stat(file_name, buf);
@@ -93,11 +93,11 @@ int file_size(char *file_name)
 char *file_type(char *file_name)
 {
     struct stat *buf;
-    buf = malloc(sizeof(struct stat));
+    buf = my_malloc(sizeof(struct stat));
     char *file_type = NULL;
 
     stat(file_name, buf);
-    file_type = malloc(sizeof(char) * 10);
+    file_type = my_malloc(sizeof(char*));
     if (S_ISREG(buf->st_mode))
         strcpy(file_type, "regular");
     else if (S_ISDIR(buf->st_mode))
@@ -119,11 +119,11 @@ char *file_type(char *file_name)
 char *file_last_modif_time(char *file_name)
 {
     struct stat *buf;
-    buf = malloc(sizeof(struct stat));
+    buf = my_malloc(sizeof(struct stat));
     char *file_time = NULL;
 
     stat(file_name, buf);
-    file_time = malloc(sizeof(char) * 20);
+    file_time = my_malloc(sizeof(char) * 20);
     strftime(file_time, 20, "%d/%m/%Y %H:%M:%S", localtime(&buf->st_mtime));
     free(buf);
     return (file_time);
@@ -132,11 +132,11 @@ char *file_last_modif_time(char *file_name)
 char *file_change_status_time(char *file_name)
 {
     struct stat *buf;
-    buf = malloc(sizeof(struct stat));
+    buf = my_malloc(sizeof(struct stat));
     char *file_time = NULL;
 
     stat(file_name, buf);
-    file_time = malloc(sizeof(char) * 20);
+    file_time = my_malloc(sizeof(char) * 20);
     strftime(file_time, 20, "%d/%m/%Y %H:%M:%S", localtime(&buf->st_ctime));
     free(buf);
     return (file_time);
@@ -145,11 +145,11 @@ char *file_change_status_time(char *file_name)
 char *file_acces_time(char *file_name)
 {
     struct stat *buf;
-    buf = malloc(sizeof(struct stat));
+    buf = my_malloc(sizeof(struct stat));
     char *file_time = NULL;
 
     stat(file_name, buf);
-    file_time = malloc(sizeof(char) * 20);
+    file_time = my_malloc(sizeof(char) * 20);
     strftime(file_time, 20, "%d/%m/%Y %H:%M:%S", localtime(&buf->st_atime));
     free(buf);
     return (file_time);

@@ -9,7 +9,7 @@
 
 int *push_back_int(int *arr, int val, int arr_size)
 {
-    int *new_arr = malloc(sizeof(int) * (arr_size + 1));
+    int *new_arr = my_malloc(sizeof(int) * (arr_size + 1));
 
     for (int i = 0; i < arr_size+1; i++)
         new_arr[i] = arr[i];
@@ -19,7 +19,7 @@ int *push_back_int(int *arr, int val, int arr_size)
 
 int *push_front_int(int *arr, int val, int arr_size)
 {
-    int *new_arr = malloc(sizeof(int) * (arr_size + 2));
+    int *new_arr = my_malloc(sizeof(int) * (arr_size + 2));
     arr_size = arr_size + 1;
 
     for (int i = 0; i < arr_size; i++)
@@ -30,7 +30,7 @@ int *push_front_int(int *arr, int val, int arr_size)
 
 int *insert_int(int *arr, int val, int arr_size, int val_pos)
 {
-    int *new_arr = malloc(sizeof(int) * (arr_size + 1));
+    int *new_arr = my_malloc(sizeof(int) * (arr_size + 1));
 
     for (int i = 0; i < arr_size; i++) {
         if (i<val_pos)
@@ -47,7 +47,7 @@ int *insert_int(int *arr, int val, int arr_size, int val_pos)
 
 int *pop_back_int(int *arr, int arr_size)
 {
-    int *new_arr = malloc(sizeof(int) * (arr_size - 1));
+    int *new_arr = my_malloc(sizeof(int) * (arr_size - 1));
 
     for (int i = 0; i < arr_size - 1; i++)
         new_arr[i] = arr[i];
@@ -56,7 +56,7 @@ int *pop_back_int(int *arr, int arr_size)
 
 int *pop_front_int(int *arr, int arr_size)
 {
-    int *new_arr = malloc(sizeof(int) * (arr_size - 1));
+    int *new_arr = my_malloc(sizeof(int) * (arr_size - 1));
 
     for (int i = 0; i < arr_size - 1; i++)
         new_arr[i] = arr[i + 1];
@@ -67,7 +67,7 @@ int *delete_int(int *arr, int val, int arr_size)
 {
     int i = 0;
     int j = 0;
-    int *new_arr = malloc(sizeof(int) * (arr_size-1));
+    int *new_arr = my_malloc(sizeof(int) * (arr_size-1));
 
     for (i = 0; i < arr_size; i++) {
         if (arr[i] != val) {

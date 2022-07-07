@@ -8,7 +8,7 @@
 #include "../includes/CSDLib.h"
 
 node_t *push_front_ll(node_t *head, void* data) {
-    node_t *new_node = (node_t *)malloc(sizeof(node_t));
+    node_t *new_node = (node_t *)my_malloc(sizeof(node_t));
     new_node->data = data;
     new_node->next = head;
     return new_node;
@@ -16,7 +16,7 @@ node_t *push_front_ll(node_t *head, void* data) {
 
 node_t *push_back_ll(node_t *head, void* data)
 {
-    node_t *new_node = (node_t *)malloc(sizeof(node_t));
+    node_t *new_node = (node_t *)my_malloc(sizeof(node_t));
     node_t *tmp = head;
     new_node->data = data;
     new_node->next = NULL;
@@ -33,7 +33,7 @@ node_t *push_back_ll(node_t *head, void* data)
 
 node_t *add_node_ll(node_t *head, void* data, node_t *prev, node_t *next)
 {
-    node_t *new_node = (node_t *)malloc(sizeof(node_t));
+    node_t *new_node = (node_t *)my_malloc(sizeof(node_t));
     new_node->data = data;
     new_node->next = next;
     prev->next = new_node;
@@ -44,7 +44,6 @@ node_t *pop_front_ll(node_t *head)
 {
     node_t *tmp = head;
     head = head->next;
-    free(tmp);
     return(head);
 }
 
@@ -53,7 +52,6 @@ node_t *pop_back_ll(node_t *head)
     node_t *tmp = head;
     while (tmp->next->next != NULL)
         tmp = tmp->next;
-    free(tmp->next);
     tmp->next = NULL;
     return(head);
 }

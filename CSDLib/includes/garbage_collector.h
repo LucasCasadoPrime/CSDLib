@@ -14,5 +14,6 @@ typedef struct garbage_collector_s {
 } garbage_collector_t;
 
 void free_garbage_collector(void)__attribute__((destructor));
+void *my_malloc(size_t size);
 
 #endif /* !GARBAGE_COLLECTOR_H_ */

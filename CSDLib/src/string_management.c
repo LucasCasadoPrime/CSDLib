@@ -11,7 +11,7 @@ char *cut_str(int num, char *str)
 {
     int i = 0;
     int j = 0;
-    char *new_str = malloc(sizeof(char) * (num + 1));
+    char *new_str = my_malloc(sizeof(char) * (num + 1));
 
     while (str[i] != '\0') {
         if (i < num) {
@@ -26,7 +26,7 @@ char *cut_str(int num, char *str)
 
 char *replace_str(char *str, char *str2)
 {
-    str = malloc(sizeof(char) * (strlen(str2) + 1));
+    str = my_malloc(sizeof(char) * (strlen(str2) + 1));
     for (int i = 0; str2[i] != '\0'; i++)
         str[i] = str2[i];
     str[strlen(str2)] = '\0';
@@ -35,7 +35,7 @@ char *replace_str(char *str, char *str2)
 
 char *replace_char(char *str, char c1, char c2)
 {   
-    char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
+    char *new_str = my_malloc(sizeof(char) * (strlen(str) + 1));
 
     for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] == c1)
@@ -61,7 +61,7 @@ int count_char(char *str, char c)
 
 char *insert_substr(char *str, char *substr, int pos)
 {
-    char *new_str = malloc(sizeof(char) * (strlen(str) + strlen(substr) + 1));
+    char *new_str = my_malloc(sizeof(char) * (strlen(str) + strlen(substr) + 1));
     int i = 0;
 
     for (int j = 0; str[j] != '\0'; j++) {
@@ -80,7 +80,7 @@ char *insert_substr(char *str, char *substr, int pos)
 
 char *delete_substr(char *str, char *substr)
 {
-    char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
+    char *new_str = my_malloc(sizeof(char) * (strlen(str) + 1));
     int i = 0;
     int j = 0;
 
@@ -148,7 +148,7 @@ int str_end_with(char *str, char *substr)
 
 char *delete_char(char *str, char c)
 {
-    char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
+    char *new_str = my_malloc(sizeof(char) * (strlen(str) + 1));
     int i = 0;
 
     for (int k = 0; str[k] != '\0'; k++) {
@@ -163,7 +163,7 @@ char *delete_char(char *str, char c)
 char *insert_char(char *str, char c, int pos)
 {
     int len = strlen(str);
-    char *new_str = malloc(sizeof(char) * (len + 2));
+    char *new_str = my_malloc(sizeof(char) * (len + 2));
 
     for (int i = 0; i < pos; i++)
         new_str[i] = str[i];
@@ -176,7 +176,7 @@ char *insert_char(char *str, char c, int pos)
 
 char *str_to_lower(char *str)
 {
-    char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
+    char *new_str = my_malloc(sizeof(char) * (strlen(str) + 1));
 
     for (int i = 0; str[i]; i++)
         new_str[i] = tolower(str[i]);
@@ -187,7 +187,7 @@ char *str_to_lower(char *str)
 
 char *str_to_upper(char *str)
 {
-    char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
+    char *new_str = my_malloc(sizeof(char) * (strlen(str) + 1));
 
     for (int i = 0; str[i]; i++)
         new_str[i] = toupper(str[i]);
@@ -197,7 +197,7 @@ char *str_to_upper(char *str)
 
 char *str_to_capital(char *str)
 {
-    char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
+    char *new_str = my_malloc(sizeof(char) * (strlen(str) + 1));
 
     for (int i = 0; str[i]; i++) {
         if (i == 0)
@@ -212,7 +212,7 @@ char *str_to_capital(char *str)
 
 char *str_reverse(char *str)
 {
-    char *new_str = malloc(sizeof(char) * (strlen(str) + 1));
+    char *new_str = my_malloc(sizeof(char) * (strlen(str) + 1));
     int i = 0;
 
     for (int k = strlen(str) - 1; k >= 0; k--)
