@@ -1,9 +1,11 @@
-![version](https://img.shields.io/badge/version-1.0.0-brightgreen)
-![coverage](https://img.shields.io/badge/coverage-93%25-green)
-![license](https://img.shields.io/badge/license-MIT-blue)
-![build](https://img.shields.io/badge/build-pass-brightgreen)
-![tests](https://img.shields.io/badge/tests-pass-brightgreen)
+![version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=plastic)
+![license](https://img.shields.io/badge/license-MIT-blue?style=plastic)
+![build](https://img.shields.io/badge/build-pass-brightgreen?style=plastic)
+![tests](https://img.shields.io/badge/tests-pass-brightgreen?style=plastic)
+![coverage](https://img.shields.io/badge/coverage-93%25-green?style=plastic)
 ![docs](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib?style=plastic)
+![docs](https://img.shields.io/github/last-commit/LucasCasadoPrime/CSDLib?style=plastic)
+![docs](https://img.shields.io/discord/981459716209254460?style=plastic)
 
 
 <!-- PROJECT LOGO -->
