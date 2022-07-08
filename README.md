@@ -1,4 +1,4 @@
-[![GitHub Repo Size](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib/](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib/)
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib/]](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib/)
 
 <!-- PROJECT LOGO -->
 <br />
