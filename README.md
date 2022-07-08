@@ -1,6 +1,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=plastic)
 ![Build](https://img.shields.io/badge/build-pass-brightgreen?style=plastic)
+![Codacy](https://api.codacy.com/project/badge/Grade/brightgreen?style=plastic)
 ![Criterion](https://img.shields.io/badge/criterion-100%25-brightgreen?style=plastic)
 ![Last Commit](https://img.shields.io/github/last-commit/LucasCasadoPrime/CSDLib?style=plastic)
 ![Repo Size](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib?style=plastic)
