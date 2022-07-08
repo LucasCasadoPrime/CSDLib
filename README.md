@@ -3,7 +3,7 @@
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![build](https://img.shields.io/badge/build-pass-brightgreen)
 ![tests](https://img.shields.io/badge/tests-pass-brightgreen)
-![docs](https://img.shields.io/badge/github/repo-size/:LucasCasadoPrime/:CSDLib)
+![docs](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib?style=plastic)
 
 
 <!-- PROJECT LOGO -->
