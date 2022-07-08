@@ -1,13 +1,13 @@
 <div  align="center">
-	![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=plastic)
-	![Build](https://img.shields.io/badge/build-pass-brightgreen?style=plastic)
-	![Criterion](https://img.shields.io/badge/criterion-100%25-brightgreen?style=plastic)
-	![Last Commit](https://img.shields.io/github/last-commit/LucasCasadoPrime/CSDLib?style=plastic)
-	![Repo Size](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib?style=plastic)
-	![License](https://img.shields.io/badge/license-MIT-blue?style=plastic)
-	![Social](https://img.shields.io/github/followers/LucasCasadoPrime?style=social&label=Follow&colorBackground=%23ffffff&color=%230066ff)
-	![Social](https://img.shields.io/github/stars/LucasCasadoPrime/CSDLib?style=social&label=Follow&colorBackground=%23ffffff&color=%230066ff)
-<div/>
+![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=plastic)
+![Build](https://img.shields.io/badge/build-pass-brightgreen?style=plastic)
+![Criterion](https://img.shields.io/badge/criterion-100%25-brightgreen?style=plastic)
+![Last Commit](https://img.shields.io/github/last-commit/LucasCasadoPrime/CSDLib?style=plastic)
+![Repo Size](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib?style=plastic)
+![License](https://img.shields.io/badge/license-MIT-blue?style=plastic)
+![Social](https://img.shields.io/github/followers/LucasCasadoPrime?style=social&label=Follow&colorBackground=%23ffffff&color=%230066ff)
+![Social](https://img.shields.io/github/stars/LucasCasadoPrime/CSDLib?style=social&label=Follow&colorBackground=%23ffffff&color=%230066ff)
+</div>
 
 
 
