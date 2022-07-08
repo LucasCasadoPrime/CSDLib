@@ -1,4 +1,4 @@
-[![GitHub Repo Size](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib/]](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib/)
+![version](https://img.shields.io/badge/version-1.2.3-blue)
 
 <!-- PROJECT LOGO -->
 <br />
