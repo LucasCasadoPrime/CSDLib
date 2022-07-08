@@ -1,4 +1,10 @@
-![version](https://img.shields.io/badge/version-1.2.3-blue)
+![version](https://img.shields.io/badge/version-1.0.0-green)
+![coverage](https://img.shields.io/badge/coverage-93%25-yellowgreen)
+![license](https://img.shields.io/badge/license-MIT-blue)
+![build](https://img.shields.io/badge/build-pass-brightgreen)
+![tests](https://img.shields.io/badge/tests-pass-brightgreen)
+![docs](https://img.shields.io/badge/github/repo-size/LucasCasadoPrime/CSDLib)
+
 
 <!-- PROJECT LOGO -->
 <br />
