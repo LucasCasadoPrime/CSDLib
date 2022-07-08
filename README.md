@@ -70,7 +70,7 @@ To be informed about the project, you can visit the [Discord](https://discord.gg
 1. Clone the repo
 
 ```sh
-git clone https://github.com/your_username_/CSDLib.git
+git clone https://github.com/LucaCasadoPrime/CSDLib.git
 ```
 2. To install the library, you need to run this command:
 
