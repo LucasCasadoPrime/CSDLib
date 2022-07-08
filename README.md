@@ -86,29 +86,32 @@ gcc -Wall -Wextra -Werror -I./include -lCSDlib -o my_program
 ## Usage
 
 This lib have five modules and multiple functions in them to help you.
+
 The modules are :
 
-. Strings management
+	. Strings management
 
-. String's Array management
+	. String's Array management
 
-. Int's Array management
+	. Int Array management
 
-. Files management
+	. Files management
 
-. Linked list generic system <br/>
+	. Linked list generic system
+<br /><br />
 
 
 The particularities of CSDLib are :
-
-. All function are automatically free
-
-. Variable assignment is automaticly reallocated if needed
-
-. An system of linked list is available to help you to manage your data
-
-. A lot of functions added to help you to manage your data (based on python standard library)
-
+	
+ 1. All function are automatically free (don't forget to use my_malloc(size) function)
+	    
+  2. Variable assignment is automatically reallocated if needed
+    
+  3. An system of linked list is available to help you to manage your
+    data
+    
+  4.  A lot of functions added to help you to manage your data (based on
+    python standard library)
 
 For your future problems, please refer to the [Documentation]() (soon)
 
