@@ -2,7 +2,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue?style=plastic)
 ![Build](https://img.shields.io/badge/build-pass-brightgreen?style=plastic)
 ![Tests](https://img.shields.io/badge/tests-pass-brightgreen?style=plastic)
-![Criterion](https://img.shields.io/badge/coverage-100%25-green?style=plastic)
+![Criterion](https://img.shields.io/badge/criterion-100%25-green?style=plastic)
 ![Last Commit](https://img.shields.io/github/last-commit/LucasCasadoPrime/CSDLib?style=plastic)
 ![Repo Size](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib?style=plastic)
 
