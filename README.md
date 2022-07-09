@@ -1,6 +1,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=plastic)
 ![Build](https://img.shields.io/badge/build-pass-brightgreen?style=plastic)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb9083176e564d5fb629ebb68e526216)](https://app.codacy.com/gh/LucasCasadoPrime/CSDLib?utm_source=github.com&utm_medium=referral&utm_content=LucasCasadoPrime/CSDLib&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/3585172b13cd4b3da1472cadc160734b)](https://www.codacy.com/gh/LucasCasadoPrime/CSDLib/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LucasCasadoPrime/CSDLib&amp;utm_campaign=Badge_Grade?style=plastic)
 ![Criterion](https://img.shields.io/badge/criterion-100%25-brightgreen?style=plastic)
 ![Last Commit](https://img.shields.io/github/last-commit/LucasCasadoPrime/CSDLib?style=plastic)
