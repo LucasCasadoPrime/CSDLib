@@ -1,6 +1,6 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=plastic)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3585172b13cd4b3da1472cadc160734b?style=plastic)](https://www.codacy.com/gh/LucasCasadoPrime/CSDLib/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LucasCasadoPrime/CSDLib&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3585172b13cd4b3da1472cadc160734b?style=plastic)
 ![Criterion](https://img.shields.io/badge/criterion-100%25-brightgreen?style=plastic)
 ![Last Commit](https://img.shields.io/github/last-commit/LucasCasadoPrime/CSDLib?style=plastic)
 ![Repo Size](https://img.shields.io/github/repo-size/LucasCasadoPrime/CSDLib?style=plastic)
