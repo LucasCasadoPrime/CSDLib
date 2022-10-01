@@ -77,3 +77,11 @@ int *delete_int(int *arr, int val, int arr_size)
     }
     return (new_arr);
 }
+
+int foldl(int *arr, int arr_size) {
+    int res = 0;
+
+    for (int i = 0; i < arr_size; i++)
+        res += arr[i];
+    return (res);
+}

@@ -85,5 +85,11 @@ int *insert_int(int *arr, int val, int arr_size, int val_pos);
 */
 int *delete_int(int *arr, int val, int arr_size);
 
+/*! int foldl(int *array)
+    \brief Fold left an array.
+    \param array The array.
+    \return The result of the fold.
+*/
+int foldl(int *arr, int arr_size);
 
 #endif /* !ARRAY_INT_MANAGEMENT_H_ */

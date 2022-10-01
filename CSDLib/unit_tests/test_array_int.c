@@ -62,3 +62,10 @@ Test(array_int_management, delete_int)
     int *new_array = delete_int(array, 3, array_size);
     cr_assert_eq(new_array[3], 5);
 }
+
+Test(array_int_management, foldl)
+{
+    int array[5] = {1, 2, 3, 4, 5};
+    int result = foldl(array, 5);
+    cr_assert_eq(result, 15);
+}
